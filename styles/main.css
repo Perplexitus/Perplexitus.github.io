@@ -2,37 +2,43 @@
 /* You may use #HEX or color names */
 
 /* * is a wildcard referring to all elements. */
-* { margin: ; box-sizing: 1rem border-box; color:;}
+
+* { /*margin:; box-sizing: 1rem border-box; color:; */}
 
 body {
     font-size: 16px;
-    line-height: 37px;
+    line-height: 2.2em;
     font-family: sans-serif;
-    background: EEE;
-    color: ;
+    background: 0;
+    color: #000;
+
 }
 
 h1 {
     font-size: 2rem;
     color: black;
+    margin: 0
 }
 
 h2 {
     font-size: 1.4rem;
     text-align: center;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 3px solid #bbb;
     color: darkslategrey;
+    background: #77e3ff
 }
 
 h4 {
     font-size: 1rem;
     text-align: center;
     color: darkslategrey ;
+    margin: 0;
+    padding: 0;
 }
 
 header, main, footer {
     margin: 2rem auto;
-    padding: ; /* px */
+    padding: 0; /* px */
     max-width: 1000px /* xxxpx (px = pixel is a unit of measure) Save for later  */;
 
 }
@@ -41,10 +47,12 @@ header, footer, footer a {
     text-align: center;
     background-color: #77e3ff;
     color: blue;
+    margin: auto;
+    padding: 1em;
 }
 
 header img {
-    width: ;
+    /* Width : ; */
     height: auto;
     float: right;
     top: auto;
@@ -53,4 +61,10 @@ header img {
 footer {
     font-size: smaller;
     color: gray
+}
+
+main {
+    margin: auto;
+    /* padding: ; */
+
 }
