@@ -1,0 +1,80 @@
+@media only screen and (min-width: 25em) {
+    header, main, footer {
+        width: auto;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 600px;
+    }
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+body,
+main,
+header,
+footer {
+    margin: 0 auto;
+}
+
+/*Navigation bar at the top */
+
+/* Hamburger! */
+.hamburger {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    display: block;
+}
+
+.navbar {
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    text-align: center;
+    background-color: #333;
+    max-width: 300px;
+    display: none;
+}
+.navbar li {
+    display: block;
+    text-align: center;
+    list-style-type: none;
+    margin: 4px;
+    padding: 0;
+}
+
+.navbar li a {
+    padding: 1px;
+    text-decoration: none;
+    color: #a1dbec;
+    border: solid 1.5px grey;
+}
+
+/* Navbar link block color change on hover
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+*/
+
+img {
+    float: none;
+    margin: 0 0 1em 1em;
+}
+
+/*Footer styling*****************COME BACK AND CHANGE THIS HORRIFIC COLOR! */
+
+footer {
+    font-size: smaller;
+    background: #333;
+    margin: 0 auto;
+    color: #FFF
+}

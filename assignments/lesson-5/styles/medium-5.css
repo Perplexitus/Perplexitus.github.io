@@ -1,15 +1,18 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+/* Medium Screen CSS */
+@media only screen and (min-width: 37.5em) {
+
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
 }
 
 body,
 main,
 header,
 footer {
-    width: 50em;
-    max-width: 50em;
+    width: 600px;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -24,18 +27,23 @@ header {
 .navbar {
     position: fixed;
     top: 0;
+    left: 5em;
+    right: 5em;
     border: 1px solid #ccc;
     border-width: 1px 0;
-    width: 50em;
-    margin: auto;
     text-align: center;
     background-color: #333;
+    min-width: 570px;
 
 }
 
 .navbar li {
-    display: inline;
+    display: inline-block;
     text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .navbar li a {
@@ -52,10 +60,25 @@ header {
     color: black;
 }
 
+li a.navbar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.navbar) {
+    background-color: #555;
+    color: white;
+}
+
 main {
     width: 50em;
     margin: auto;
     text-align: center;
+}
+
+img {
+    float: right;
+    margin: 0 0 1em 1em;
 }
 
 /*Footer styling*****************COME BACK AND CHANGE THIS HORRIFIC COLOR! */
@@ -68,30 +91,4 @@ footer {
 }
 
 
-
-
-/*Testing JS
-
- Style the header
-header {
-    padding: 10px 16px;
-    background: #555;
-    color: #f1f1f1;
-}
-
- Page content
-.content {
-    padding: 16px;
-}
-
-The sticky class is added to the header with JS when it reaches its scroll position
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-}
-
- Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0)
-.sticky + .content {
-    padding-top: 102px;
 }
