@@ -8,7 +8,6 @@
         font-size: 1.1em;
         margin: 0 auto;
     }
-}
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -136,3 +135,5 @@ p.temp-low {
 /******************************
 Unused CSS
 **********************/
+
+}
