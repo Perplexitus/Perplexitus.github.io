@@ -1,11 +1,14 @@
-@media only screen and (min-width: 25em) {
-    header, main, footer {
+@media only screen and (min-width: 10em) {
+    header, main, footer, body {
         width: auto;
         text-align: center;
         align-content: center;
         align-items: center;
         text-align: center;
-        max-width: 600px;
+        max-width: 37em;
+        font-size: 1.2em;
+        margin: 0 auto;
+        min-width: 15em;
     }
 }
 * {
@@ -16,13 +19,14 @@
     margin: 0 auto;
 }
 
-body,
-main,
-header,
-footer {
-    margin: 0 auto;
+header {
+    background: #0cc2dd;
+    color: #000
 }
 
+main {
+    background: #a1dbec
+}
 /*Navigation bar at the top */
 
 /* Hamburger! */
@@ -66,15 +70,31 @@ footer {
 */
 
 img {
-    float: none;
-    margin: 0 0 1em 1em;
+    margin: 0 auto;
+    min-width: 25%;
+    max-width: 100%;
 }
-
-/*Footer styling*****************COME BACK AND CHANGE THIS HORRIFIC COLOR! */
 
 footer {
     font-size: smaller;
-    background: #333;
+    background: #0cc2dd;
     margin: 0 auto;
-    color: #FFF
+    color: #000
+}
+
+.forecast {
+    display: none;
+}
+
+p.temp-high {
+    color: red;
+}
+
+p.temp-low {
+    color: blue;
+}
+
+.current {
+    color: grey;
+    font-size: 1.2em;
 }

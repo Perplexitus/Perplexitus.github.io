@@ -1,48 +1,54 @@
-/*Large Screen CSS */
 @media only screen and (min-width: 64em) {
-
+    header, main, footer, body {
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 90%;
+        font-size: 1.1em;
+        margin: 0 auto;
+    }
+}
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-body,
-main,
-header,
-footer {
-    width: 600px;
-    max-width: 600px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 header {
-    padding: 2em;
-    margin-top: 4em;
-    text-align: center;
+    background: #0cc2dd;
+    color: #000;
+    padding: 40px;
+}
+
+main {
+    background: #a1dbec
 }
 
 /*Navigation bar at the top */
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
+.navbar { /* How DO I CENTER IT??? */
     border: 1px solid #ccc;
     border-width: 1px 0;
-    width: 100%;
     text-align: center;
     background-color: #333;
+    max-width: 100%;
+    min-width: 50%;
+    position: fixed;
+    top: 0;
 
 }
-
 .navbar li {
     display: inline-block;
     text-align: center;
+    list-style-type: none;
+    margin: 4px;
+    padding: .3em;
 }
 
 .navbar li a {
-    padding: 10px;
+    padding: 1px;
     text-decoration: none;
     color: #a1dbec;
     border: solid 1.5px grey;
@@ -55,25 +61,78 @@ header {
     color: black;
 }
 
-main {
-    width: 50em;
-    margin: auto;
-    text-align: center;
-}
-
 img {
-    float: right;
-    margin: 0 0 1em 1em;
+    margin: 0 auto;
+    min-width: 30%;
+    max-width: 60%;
 }
 
-/*Footer styling*****************COME BACK AND CHANGE THIS HORRIFIC COLOR! */
+main > img {
+}
 
 footer {
     font-size: smaller;
-    background: #a1bdec;
-    margin: auto;
-    width: 50em;
+    background: #0cc2dd;
+    margin: 0 auto;
+    color: #000;
+    margin-top: 2em;
 }
 
-
+.forecast {
+    display: inline-block;
 }
+
+p.temp-high {
+    color: red;
+}
+
+p.temp-low {
+    color: blue;
+}
+
+.current {
+    color: grey;
+    font-size: 1.2em;
+}
+
+#local-image1 {
+    float: left;
+    border: 10px solid #00126d;
+    margin: 1em;
+}
+
+#local-image2 {
+    float: right;
+    border: 10px solid #00126d;
+    margin-right: 1em;
+    margin-top: 3em;
+}
+
+.conditions {
+}
+
+/* Hamburger! */
+.hamburger {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    display: none;
+}
+
+.town-article {
+    column-count: 2;
+    margin-top: 2em;
+}
+
+.credits {
+    display: none;
+}
+
+#article1 {
+    clear: left;
+}
+
+/******************************
+Unused CSS
+**********************/

@@ -1,53 +1,54 @@
-/* Medium Screen CSS */
 @media only screen and (min-width: 37.5em) {
-
-    * {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
+    header, main, footer, body {
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 60em;
+        font-size: 1.2em;
+        margin: 0 auto;
+    }
 }
-
-body,
-main,
-header,
-footer {
-    width: 600px;
-    max-width: 600px;
-    margin: auto;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 header {
-    padding: 2em;
-    margin-top: 4em;
-    text-align: center;
+    background: #0cc2dd;
+    color: #000;
+    padding: 40px;
+}
+
+main {
+    background: #a1dbec
 }
 
 /*Navigation bar at the top */
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 5em;
-    right: 5em;
+.navbar { /* How DO I CENTER IT??? */
     border: 1px solid #ccc;
     border-width: 1px 0;
     text-align: center;
     background-color: #333;
-    min-width: 570px;
+    max-width: 100%;
+    min-width: 50%;
+    position: fixed;
+    top: 0;
 
 }
-
 .navbar li {
     display: inline-block;
     text-align: center;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    margin: 4px;
+    padding: .3em;
 }
 
 .navbar li a {
-    padding: 10px;
+    padding: 1px;
     text-decoration: none;
     color: #a1dbec;
     border: solid 1.5px grey;
@@ -56,39 +57,58 @@ header {
 /* Navbar link block color change on hover */
 
 .navbar a:hover {
-    background: #ddd;
-    color: black;
-}
-
-li a.navbar {
-    background-color: #4CAF50;
-    color: white;
-}
-
-li a:hover:not(.navbar) {
-    background-color: #555;
-    color: white;
-}
-
-main {
-    width: 50em;
-    margin: auto;
-    text-align: center;
+background: #ddd;
+color: black;
 }
 
 img {
-    float: right;
-    margin: 0 0 1em 1em;
+    margin: 0 auto;
+    min-width: 50%;
+    max-width: 75%;
 }
-
-/*Footer styling*****************COME BACK AND CHANGE THIS HORRIFIC COLOR! */
 
 footer {
     font-size: smaller;
-    background: #a1bdec;
-    margin: auto;
-    width: 50em;
+    background: #0cc2dd;
+    margin: 0 auto;
+    color: #000;
 }
 
-
+.forecast {
+    display: inline-block;
 }
+
+p.temp-high {
+    color: red;
+}
+
+p.temp-low {
+    color: blue;
+}
+
+.current {
+    color: grey;
+    font-size: 1.2em;
+}
+
+/* Hamburger! */
+.hamburger {
+width: 35px;
+height: 5px;
+background-color: black;
+margin: 6px 0;
+display: none;
+}
+
+.town-article {
+    column-count: 2;
+    height: 200px;
+}
+
+.credits {
+    display: none;
+}
+
+/******************************
+Unused CSS
+**********************/

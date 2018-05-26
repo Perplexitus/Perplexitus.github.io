@@ -7,23 +7,26 @@
     <title>Franklin City</title>
     <meta name="author" content="Tyler Anderson">
     <meta name="description" content="Watch for the clouds! Local weather for the Franklin area.">
-    <link rel="icon" href="#">
+    <link rel="icon" href="/assignments/lesson-5/images/Icon.jpg">
     <!-- Make icon!! -->
     <meta name="keywords" content="Weather........................................................................................................................................ (<-Tags)">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="/assignments/lesson-5/styles/main(small).css">
+    <link rel="stylesheet" href="/assignments/lesson-5/styles/large-5.css">
 </head>
 
 <body>
     <header>
-        <caption>
-            <img src="#logo" width="200" height="273" alt="Logo">
-            <figcaption>This image represents the unpredictability of life and nature, together.</figcaption>
-        </caption>
         <h1>CumulusWatch</h1>
         <div class="subheading">
             <h4 class="motto">Always watching those clouds.</h4>
         </div>
+        <figure>
+            <img src="/assignments/lesson-5/images/watching-those-clouds.jpg" width="200" height="273" alt="Logo">
+            <p class="credits">
+                <a href="http://www.freepik.com">Designed by Freepik</a>
+            </p>
+            <figcaption>This image represents the unpredictability of life and nature, together.</figcaption>
+        </figure>
 
     </header>
     <div class="hamburger"></div>
@@ -45,66 +48,79 @@
     </nav>
 
     <main>
-        <h2>Page Title</h2>
+        <h2>Franklin Weather</h2>
         <figure>
         </figure>
         <section class="weather-summary">
             <h3>Weather Summary</h3>
             <div class="highlow">
-                <p>High:</p>
-                <p>Low:</p>
+                <p class="temp-high">High: 81&deg;F</p>
+                <p class="temp-low">Low: 49&deg;F</p>
             </div>
+            <section class="forecast">
+                <h3>Ten Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
             <div class="current">
-                Sunny
-                <picture>
-                    <img src="images/#" alt="">
-                </picture>
+                Cloudy, Breezy
+                <figure>
+                    <img id="local-image1" src="/assignments/lesson-5/images/bubble-clear-close-up-1005646.jpg" alt="Water droplets on window">
+                </figure>
             </div>
             <div class="conditions">
-                <p>Precipitation:</p>
-                <p>Wind Speed:</p>
+                <h4>Precipitation:</h4>
+                    <p>$Relative HTML Precipitation tag$ <br>
+                    Close to 4 inches this coming Thursday.</p>
+                <br>
+                <br>
+                <h4>Wind Speed:</h4>
+                <p>$Another relative HTML tag$<br>
+                Something or another about many much normal winds.</p>
             </div>
         </section>
-
-        <section class="forecast">
-            <h3>Ten Day Forecast</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Day 1</th>
-                        <th>Day 2</th>
-                        <th>Day 3</th>
-                        <th>Day 4</th>
-                        <th>Day 5</th>
-                        <th>Day 6</th>
-                        <th>Day 7</th>
-                        <th>Day 8</th>
-                        <th>Day 9</th>
-                        <th>Day 10</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>89&deg;F</td>
-                        <td>87&deg;F</td>
-                        <td>78&deg;F</td>
-                        <td>75&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>79&deg;F</td>
-                        <td>83&deg;F</td>
-                        <td>85&deg;F</td>
-                        <td>89&deg;F</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
+        <br>
         <article>
-            <h3>Franklin Breaks Record</h3>
-            <img src="">
-            <p class="town-article">
-            </p>
+            <h3>Franklin Breaks Record!</h3>
+            <figure>
+                <img id="local-image2" src="/assignments/lesson-5/images/clouds-cloudy-dark-clouds-325953.jpg" alt="Cloudy landscape with rain.">
+            </figure>
+
+            <div>
+                <h4>Town Article</h4>
+                <p class="town-article">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
         </article>
         <pre>
 
@@ -134,14 +150,11 @@
 
 
         </pre>
-    </main>
+        <br>
+        <aside><a href="#">Gallery</a></aside>
+        <br>
 
-    <sidebar class="sidebar">
-        <!-- Put this in <main?> -->
-        <link rel="sidebar">
-        <!-- Don't know what this does.. -->
-        <p>Some random area of the screen with a button.</p><button onclick="#">Click ME!</button>
-    </sidebar>
+    </main>
 
     <footer>
         <section class="contact">
