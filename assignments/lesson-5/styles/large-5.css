@@ -33,9 +33,10 @@ main {
     text-align: center;
     background-color: #333;
     max-width: 100%;
-    min-width: 50%;
+    min-width: 90%;
     position: fixed;
     top: 0;
+    display: flex;
 
 }
 .navbar li {
@@ -43,7 +44,6 @@ main {
     text-align: center;
     list-style-type: none;
     margin: 4px;
-    padding: .3em;
 }
 
 .navbar li a {
