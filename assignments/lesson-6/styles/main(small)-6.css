@@ -26,22 +26,39 @@ main {
 /*Navigation bar at the top */
 
 /* Hamburger! */
-.hamburger {
-    display: block;
-    border: 2px red solid;
-    position: fixed;
-    right: 0;
-    height: 3em;
-    width: 3em;
+
+    #navButton {
+        width: 2.3rem;
+        height: 2.3rem;
+        border: none;
+        background-color: transparent;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 20;
+        position: fixed;
+        top:0;
+        right:0;
+        margin: .5rem;
+
+    }
+
+    .hamburger {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
 
 }
+
+
 
 /*****************Hamburger Onclick*************/
     @media only screen and (max-width: 37.5em) {
         .navbar.responsive {
             position: fixed;
             display: block;
-            top: 7em;
+            top: 2.5em;
             right: 0;
             border: 1px solid #ccc;
             border-width: 1px 0;
@@ -149,6 +166,17 @@ p.temp-low {
         clear: both;
         display: table;
     }
+
+
+div > ul {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    list-style-type: none;
+    padding: 0;
+    margin: .5rem;
+    position: relative;
+
 
 }
 
