@@ -1,11 +1,10 @@
 @media only screen and (min-width: 15em) {
     header, main, footer, body {
-        width: auto;
+        width: 0 auto;
         text-align: center;
         align-content: center;
-        align-items: center;
         text-align: center;
-        max-width: 15em;
+        max-width: 90%;
         font-size: 1.2em;
         margin: 0 auto;
         min-width: 15em;
