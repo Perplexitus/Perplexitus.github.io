@@ -1,0 +1,122 @@
+@media only screen and (min-width: 37.5em) {
+    header, main, footer, body {
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 37.5rem;
+        font-size: 1.2em;
+        margin: 0 auto;
+    }
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+header {
+    background: #0cc2dd;
+    color: #000;
+    padding: 40px;
+}
+
+main {
+    background: #a1dbec
+}
+
+    /* Hamburger! */
+.hamburger.clearfix {
+    display: none;
+}
+
+
+/*Navigation bar at the top */
+
+.navbar { /* How DO I CENTER IT??? */
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+    background-color: #333;
+    min-width: 100%;
+    max-width: 100%;
+    padding: .6rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+
+
+}
+.navbar li {
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: .2rem;
+
+}
+
+.navbar li a {
+    padding: .45rem;
+    text-decoration: none;
+    color: #a1dbec;
+    border: solid 1.5px grey;
+}
+
+/* Navbar link block color change on hover */
+
+.navbar a:hover {
+background: #ddd;
+color: black;
+}
+
+img {
+    margin: 0 auto;
+    min-width: 50%;
+    max-width: 75%;
+}
+
+footer {
+    font-size: smaller;
+    background: #0cc2dd;
+    margin: 0 auto;
+    color: #000;
+}
+
+.forecast {
+    display: inline-block;
+}
+
+p.temp-high {
+    color: red;
+}
+
+p.temp-low {
+    color: blue;
+}
+
+.current {
+    color: grey;
+    font-size: 1.2em;
+}
+
+.town-article {
+    column-count: 2;
+    height: 300px;
+}
+
+.credits {
+    display: none;
+}
+
+
+/***********************Clear fix**************************/
+
+    .clearfix {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+
+}

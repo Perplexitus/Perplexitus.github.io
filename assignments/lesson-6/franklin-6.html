@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin City</title>
+    <meta name="author" content="Tyler Anderson">
+    <meta name="description" content="Watch for the clouds! Local weather for the Franklin area.">
+    <link rel="icon" href="/assignments/lesson-6/images/Icon-128px.jpg">
+    <!-- Make icon!! -->
+    <meta name="keywords" content="Weather........................................................................................................................................ (<-Tags)">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="/assignments/lesson-6/styles/main(small)-6.css">
+    <link rel="stylesheet" href="/assignments/lesson-6/styles/medium-6.css">
+    <link rel="stylesheet" href="/assignments/lesson-6/styles/large-6.css">
+    <!-- Font style -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="scripts/hamburger.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar clearfix">
+        <ul>
+            <li id="homeButton"><a href="#">Home</a>
+            </li>
+            <li><a href="#">Franklin</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>CumulusWatch</h1>
+        <div class="subheading">
+            <h4 class="motto">Always watching those clouds.</h4>
+        </div>
+        <button class="hamburger clearfix" onclick="toggleMenu()">&#9776;</button>
+        <figure>
+            <img class="logo, clearfix" src="/assignments/lesson-6/images/logo.jpg" alt="Logo" sizes="50vw"
+                 srcset="/assignments/lesson-6/images/logo-small-320px.jpg 320w,
+                         /assignments/lesson-6/images/logo-medium-600px.jpg 600w,
+                         /assignments/lesson-6/images/logo-large-1024px.jpg 1024w"
+                 >
+            <p class="credits">
+                <a href="http://www.freepik.com">Designed by Freepik</a>
+            </p>
+            <figcaption>This image represents the unpredictability of life and nature, together.</figcaption>
+        </figure>
+
+    </header>
+
+    <main>
+        <h2>Franklin Weather</h2>
+        <figure>
+        </figure>
+        <section class="weather-summary">
+            <h3>Weather Summary</h3>
+            <div class="highlow">
+                <p class="temp-high">High: 81&deg;F</p>
+                <p class="temp-low">Low: 49&deg;F</p>
+            </div>
+            <section class="forecast">
+                <h3>Ten Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <div class="current">
+                Cloudy, Breezy
+                <figure>
+                    <img id="local-image1" src="/assignments/lesson-6/images/bubble-clear-close-up-1005646.jpg" alt="Water droplets on window" sizes="50vw"
+                            srcset="images/franklin-small-320px.jpg 320w,
+                                    images/franklin-medium-600px.jpg 600w,
+                                    images/franklin-large-1024px.jpg 1024w">
+                    <figcaption>A nice sunny day</figcaption>
+                </figure>
+            </div>
+            <div class="conditions">
+                <h4>Precipitation:</h4>
+                    <p>$Relative HTML Precipitation tag$ <br>
+                    Close to 4 inches this coming Thursday.</p>
+                <br>
+                <br>
+                <h4>Wind Speed:</h4>
+                <p>$Another relative HTML tag$<br>
+                Something or another about many much normal winds.</p>
+            </div>
+        </section>
+        <br>
+        <article id="article1">
+            <h3>Franklin Breaks Record!</h3>
+            <figure>
+                <img id="local-image2" src="/assignments/lesson-6/images/clouds-cloudy-dark-clouds-325953.jpg" alt="Cloudy landscape with rain.">
+            </figure>
+
+            <div>
+                <h4>Town Article</h4>
+                <p class="town-article">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </article>
+        <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        I needed a scroll bar.
+
+
+
+
+
+
+
+
+
+
+        </pre>
+        <br>
+        <aside><a href="#">Gallery</a></aside>
+        <br>
+
+    </main>
+
+    <footer>
+        <section class="contact">
+            Contact information placeholder 999.999.9999 123 Main St. Anytown, US 99999 Google Map
+        </section>
+        <section class="footer-bar">&copy;2018 | All Rights Reserved | CumulusWatch | <span id="currentdate"></span>
+        </section>
+    </footer>
+
+    <script type="text/javascript" src="scripts/currentDate().js">getDate();
+    </script>
+</body>
+
+</html>

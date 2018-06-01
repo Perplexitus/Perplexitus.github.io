@@ -28,6 +28,10 @@ main {
 
 /*Navigation bar at the top */
 
+.hamburger {
+        display: none;
+    }
+
 .navbar { /* How DO I CENTER IT??? */
     border: 1px solid #ccc;
     border-width: 1px 0;
