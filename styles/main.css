@@ -89,3 +89,10 @@ section figure {
 figcaption {
 
 }
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
