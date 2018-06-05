@@ -1,0 +1,111 @@
+#decor1, #decor2, #ribbon1, #ribbon2, #ex1, #shortHand  {
+    width: auto;
+    height: 500px;
+    position: relative;
+}
+
+
+
+
+
+
+
+#backGrnd {
+    background-image: url(../images/old_paper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#decor1 {
+    background-image: url(../images/decoration.png);
+    background-repeat: repeat-x;
+}
+
+#ribbon1 {
+    background-image: url(../images/ribbon.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: auto;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#longHand {  /* Just an example */
+    background-image: url("../images/ribbon.png");
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-position: center;
+}
+
+
+#shortHand {
+    background: no-repeat  center url(../images/ribbon.png) #000;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#small {
+    font-size: 16px;
+    text-align: center;
+    color: #eee
+}
+

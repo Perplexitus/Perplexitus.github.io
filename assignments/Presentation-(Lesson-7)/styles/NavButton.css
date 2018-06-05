@@ -1,0 +1,45 @@
+.navbar { /* How DO I CENTER IT??? */
+    float:left;
+    width: 100%;
+    background: #DAE0D2 url("../images/bg.gif")
+        repeat-x bottom;
+    font-size:93%;
+    line-height:normal;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 10px 10px 0;
+    list-style: none;
+}
+.navbar li {
+    float: left;
+    background: url("../images/norm_right.gif")
+        no-repeat right top;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li a {
+    display: block;
+    background: url("../images/norm_left.gif")
+        no-repeat left top;
+    padding: 5px 15px 4px;
+    text-decoration: none;
+}
+
+/* Navbar link block color change on hover */
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+#current {
+    background:url("../images/norm_right_on.gif");
+}
+
+#current a {
+    background-image: url(../images/norm_left_on.gif);
+    padding-bottom: 5px;
+}

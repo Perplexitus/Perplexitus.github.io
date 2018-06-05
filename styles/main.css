@@ -78,3 +78,18 @@ footer {
 .presentation {
     text-align: center;
 }
+
+section figure {
+    margin: 0 auto;
+    padding: 0;
+    border: 8px solid #000;
+    margin-bottom: 1.7rem;
+}
+
+#presentationVideo {
+    width: 100%;
+}
+
+figcaption {
+
+}
