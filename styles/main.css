@@ -8,9 +8,6 @@
 body {
     font-size: 16px;
     line-height: 2.2em;
-    background: 0;
-    color: #000;
-
 }
 
 h1 {
@@ -22,7 +19,7 @@ h2 {
     font-size: 1.4rem;
     text-align: center;
     border-bottom: 3px solid #bbb;
-    color: darkslategrey;
+    color: #555;
     background: #77e3ff
 }
 
@@ -36,7 +33,7 @@ header, footer, footer a {
     text-align: center;
     background-color: #77e3ff;
     color: blue;
-    padding: 1em;
+    padding: .5em;
 }
 
 header {
@@ -44,12 +41,11 @@ header {
 }
 
 header img {
-
-    max-width: 100%;
-    height: auto;
+    height:100%;
     float: right;
     top: 0;
-
+    max-width:100%;
+    margin-bottom: 1rem;
 }
 
 footer {
