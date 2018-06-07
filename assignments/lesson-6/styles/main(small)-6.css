@@ -48,6 +48,17 @@ main {
         right: 0;
     }
 
+.hamburgerBar {
+    width: 35px;
+    height: 4px;
+    background-color: black;
+    list-style-type: none;
+    padding: 0;
+    margin: .5rem;
+    position: relative;
+    border-radius: 25px;
+    }
+
 
 }
 
@@ -102,6 +113,7 @@ main {
     background-color: #333;
     max-width: 300px;
     display: none;
+
 }
 .navbar li {
     display: none;
@@ -109,6 +121,7 @@ main {
     list-style-type: none;
     margin: 4px;
     padding: 0;
+
 }
 
 .navbar li a {
@@ -168,16 +181,6 @@ p.temp-low {
     }
 
 
-.hamburgerBar {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    list-style-type: none;
-    padding: 0;
-    margin: .5rem;
-    position: relative;
 
-
-}
 
 
