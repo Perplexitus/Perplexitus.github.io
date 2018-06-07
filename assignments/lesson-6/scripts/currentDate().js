@@ -1,5 +1,3 @@
-
-
 var date = new Date();
 
 //Ask date object for the day of the week.
