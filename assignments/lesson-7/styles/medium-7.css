@@ -91,4 +91,28 @@
         color: black;
     }
 
+
+
+/* ***********Gallery.html *********** */
+
+.gallery-main * {
+    border: 0px red solid;
+}
+
+.gallery-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1em;
+
+}
+
+.gallery-main h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: .7em;
+}
+
+
+
+
 }

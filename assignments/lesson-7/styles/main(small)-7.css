@@ -103,9 +103,6 @@
     }
 
 
-}
-
-
 
 /*****************Hamburger Onclick*************/
 
@@ -231,3 +228,42 @@ p.temp-low {
 
 /* *********** Gallery Specifications ********************** */
 
+.gallery-main * {
+    border:0px red solid;  /* Debug */
+    margin: 0;
+
+}
+
+* {
+    border: 0px red solid;
+}
+
+.gallery-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.gallery-main figure {
+    margin-top: 2em;
+    align-self: flex-start;
+    align-self: stretch;
+}
+
+.gallery-main figcaption {
+    font-size: .7em;
+}
+
+.gallery-main #local-image1 {
+    width: 100%;
+}
+
+    .gallery-main h2 {
+        margin-top: 1em;
+    }
+
+
+
+}

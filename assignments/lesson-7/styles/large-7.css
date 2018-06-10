@@ -1,17 +1,19 @@
 @media only screen and (min-width: 64em) {
 
     * {
-        border: 0px solid red; /* Debugging */
+        border: 0px solid red;
+        /* Debugging */
     }
 
     body {
         font-size: 1em;
-        max-width: 95%;
+        max-width: 100%;
     }
 
     header {
         margin: 4.5em 0 0 0;
     }
+
 
     /* Hamburger! */
     .hamburger {
@@ -35,51 +37,28 @@
         min-width: 95%;
     }
 
+    .credits {
+        display: none;
+    }
+
+    .logo {
+        min-width: 40%;
+    }
 
 
-.forecast {
-    display: flex;
-}
+    /* ********** GALLERY *************** */
+    .gallery-main {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 1em;
+    }
 
-p.temp-high {
-    color: red;
-}
+    .gallery-main h2 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
 
-p.temp-low {
-    color: blue;
-}
-
-.current {
-    color: grey;
-    font-size: 1.2em;
-}
-
-#local-image1 {
-    display: flex;
-    flex-flow: row nowrap;
-    border: 10px solid #00126d;
-    margin: 1em;
-}
-
-#local-image2 {
-    display: flex;
-    flex-flow: nowrap;
-    border: 10px solid #00126d;
-    margin-right: 1em;
-    margin-top: 3em;
-}
-
-.town-article {
-    column-count: 2;
-    margin-top: 2em;
-}
-
-.credits {
-    display: none;
-}
-
-#article1 {
-    display: flex;
-}
+    .gallery-main figure:hover{
+        box-shadow: 10px 10px;
+    }
 
 }
