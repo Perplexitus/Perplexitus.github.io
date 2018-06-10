@@ -1,0 +1,85 @@
+@media only screen and (min-width: 64em) {
+
+    * {
+        border: 0px solid red; /* Debugging */
+    }
+
+    body {
+        font-size: 1em;
+        max-width: 95%;
+    }
+
+    header {
+        margin: 4.5em 0 0 0;
+    }
+
+    /* Hamburger! */
+    .hamburger {
+        display: none;
+    }
+
+    .navbar {
+        max-width: 90%;
+        min-width: 80%;
+        justify-content: center;
+    }
+
+    .navbar li a {
+        padding: .45rem;
+        text-decoration: none;
+        color: #a1dbec;
+        border: solid 1.5px grey;
+    }
+
+    footer {
+        min-width: 95%;
+    }
+
+
+
+.forecast {
+    display: flex;
+}
+
+p.temp-high {
+    color: red;
+}
+
+p.temp-low {
+    color: blue;
+}
+
+.current {
+    color: grey;
+    font-size: 1.2em;
+}
+
+#local-image1 {
+    display: flex;
+    flex-flow: row nowrap;
+    border: 10px solid #00126d;
+    margin: 1em;
+}
+
+#local-image2 {
+    display: flex;
+    flex-flow: nowrap;
+    border: 10px solid #00126d;
+    margin-right: 1em;
+    margin-top: 3em;
+}
+
+.town-article {
+    column-count: 2;
+    margin-top: 2em;
+}
+
+.credits {
+    display: none;
+}
+
+#article1 {
+    display: flex;
+}
+
+}
