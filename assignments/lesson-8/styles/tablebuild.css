@@ -2,6 +2,7 @@
     text-align: center;
     font-family: "Ubuntu", sans-serif;
     border: 0px red solid; /* Debug */
+    border-collapse: collapse;
 }
 
 main {
@@ -9,43 +10,22 @@ main {
 }
 
 table {
-    display: grid;
-    max-width: 250px;
+    width: 250px;
     margin: 0 auto;
-    box-shadow: 7px 5px 15px #628ca6;
-    font-size: .9em;
+    box-shadow: 7px 7px 15px #628ca6;
 }
 
-table thead {
+th, td {
+    padding: 5px;
+    border: 1px solid #bbb;
+}
+
+
+table thead th {
     background-color: #7fb9c2;
-    display: grid;
-    justify-content: center;
     font-size: 1.5em;
-    padding: 5px;
-    border: 1px 1px 0 1px solid #ccc;
-
 }
 
-tbody th {
-    border: 1px solid #bbb;
-    padding: 5px;
-}
-
-tbody {
-    display: grid;
-}
-
-tbody tr {
-    display: grid;
-    grid-template-columns: 1fr .6fr 1fr;
-
-}
-
-tr td {
-    margin: 0;
-    border: 1px solid #bbb;
-    padding: 5px;
-}
 
 tr:nth-child(even) {
     background-color: #e7f0ed;
@@ -55,28 +35,13 @@ tbody tr:nth-child(odd) {
     background-color: #e7ffed
 }
 
-tbody tr:nth-child(6) {
-    grid-template-columns: 1fr 1.6fr;
-}
-
-tbody tr:first-child {
+tbody tr:first-child, #onlyOne {
     background-color: #628ca6;
     color: #fff;
-}
-
-tfoot {
-    background-color: #7fb9c2;
-    padding: 5px;
-    align-content: center;
-    justify-content: center;
-    display: flex;
 }
 
 tfoot th {
-    font-size: .6rem;
-}
-
-#onlyOne {
-    background-color: #628ca6;
-    color: #fff;
+    font-size: 11px;
+    background-color: #7fb9c2;
+    padding: 7px;
 }
