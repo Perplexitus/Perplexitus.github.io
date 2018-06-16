@@ -266,4 +266,75 @@ p.temp-low {
 
 
 
+
+
+
+/* ----------- Storm Center Form -------------- */
+
+    main {
+        width: 100%;
+    }
+
+    fieldset {
+        border: 3px solid #888;
+        border-radius: 30px;
+    }
+
+    fieldset * {
+        font-size: 1.2em;
+    }
+
+    .submit {
+        font-size: 1.2em;
+    }
+
+
+    input, textarea {
+        border-radius: 30px;
+        background-color: #dceeed;
+        color: #000;
+        text-align: center;
+        padding: 5px;
+    }
+
+    label {
+        display: block;
+    }
+
+    .rangeContainer {
+        width: 100%;
+    }
+
+    #range {
+        -webkit-appearance: none;
+        width: 70%;
+        height: 15px;
+        border-radius: 5px;
+        background: #eee;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+        background: linear-gradient(to right, green , red);
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #002f3f;
+        cursor: pointer;
+
+}
+
+    .required {
+        border-left: 10px solid red;;
+    }
+
+    .dangerDanger:checked{
+        border: 10px solid green;
+    }
+
 }
