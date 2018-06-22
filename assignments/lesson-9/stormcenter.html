@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Storm Center</title>
+    <meta name="author" content="Tyler Anderson">
+    <meta name="description" content="Watch for the clouds! Local weather for the Franklin area.">
+    <link rel="icon" href="/assignments/lesson-9/images/Icon-128px.jpg">
+    <meta name="keywords" content="Weather........................................................................................................................................ (<-Tags)">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="/assignments/lesson-9/styles/main(small)-9.css">
+    <link rel="stylesheet" href="/assignments/lesson-9/styles/medium-9.css">
+    <link rel="stylesheet" href="/assignments/lesson-9/styles/large-9.css">
+    <!-- Font style -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>CumulusWatch</h1>
+        <h4 class="motto">Always watching those clouds.</h4>
+
+        <div class="navAll">
+            <div class="hamburger">
+                <ul>
+                    <li class="hamburgerBar"><button id="navButton" onclick="toggleMenu()"></button></li>
+                    <li class="hamburgerBar"></li>
+                    <li class="hamburgerBar"></li>
+                </ul>
+            </div>
+                <nav class="navbar">
+                    <ul>
+                        <li id="homeButton"><a href="index.html">Home</a>
+                        </li>
+                        <li><a href="franklin-9.html">Franklin</a></li>
+                        <li><a href="#">Springfield</a></li>
+                        <li><a href="#">Greenville</a></li>
+                        <li><a href="#">Storm Center</a></li>
+                        <li><a href="gallery-9.html">Gallery</a></li>
+                    </ul>
+                </nav>
+        </div>
+
+        <figure>
+            <img class="logo" src="/assignments/lesson-9/images/logo.jpg" alt="Logo" sizes="50vw" srcset="/assignments/lesson-9/images/logo-small-320px.jpg 320w,
+                         /assignments/lesson-9/images/logo-medium-600px.jpg 600w,
+                         /assignments/lesson-9/images/logo-large-1024px.jpg 1024w">
+            <p class="credits">
+                <a href="http://www.freepik.com">Designed by Freepik</a>
+            </p>
+            <figcaption>This image represents the unpredictability of life and nature, together.</figcaption>
+        </figure>
+
+    </header>
+
+
+
+
+    <main class="stormCenterMain">
+        <h2>Storm Center</h2>
+        <div class="formContainer">
+        <form action="thankyou.html" target="_self" method="get">
+            <fieldset class="personalInfo">
+                <legend>Personal Information</legend>
+                <label>First Name:* <br>
+                <input type="text" name="fname" class="required" autocomplete="given-name" pattern="[A-Za-z]{5,}" title="Minimum of 5 letters, even if your first name has less than 5 letters..." placeholder="'John' is too short..." required></label><br>
+
+                <label>Last Name:*<br>
+                    <input type="text" name="lname" class="required" autocomplete="family-name" pattern="[A-Za-z]{5,}" title="Minimum of 5 letters, even if your last name has less than 5 letters..." placeholder="'Doe' is too short..." required></label><br>
+
+                <label>Phone Number:*<br>
+                    <input type="tel" name="tel"  class="required" autocomplete="tel" placeholder="###-###-####" required></label><br>
+
+                <label>Zip Code:*<br>
+                    <input type="number" name="zip" class="required" required></label><br>
+
+                <label>Email:<br>
+                    <input type="email" name="email" placeholder="Joe@gmail.com" autocomplete="email"></label><br>
+
+            </fieldset>
+
+            <fieldset class="areaInfo">
+                <legend>Area Information</legend>
+                <label>Storm Date: <br>
+                    <input type="date" name="date"></label><br>
+
+                <label>Storm Type: <br>
+                    <input list="stormTypes" name="stormTypes"></label>
+                <datalist id="stormTypes">
+                    <option value="Thunder Storm">
+                    <option value="Heavy Rain">
+                    <option value="Hail">
+                    <option value="Flash Flood">
+                    <option value="Tornado">
+                    <option value="Hurricane">
+                </datalist><br>
+
+                <label>Severity:<br>
+                    1 <input type="range" name="range" value="5" min="1" max="10" step="1" class="slider" id="range"> 10<br></label>
+                    <div id="rangeOutput">BROKEN</div><br>
+
+                <label>Storm Region:<br>
+                <select name="regions">
+                    <option value="selectRegion" disabled>Select Region</option>
+                    <option value="franklin">Franklin</option>
+                    <option value="greenville">Greenville</option>
+                    <option value="springfield">Springfield</option>
+                    </select></label><br>
+
+
+                User In-Danger Level:<br>
+                <label class="danger">Yes <input type="radio" name="dangerLevel"></label><br>
+
+                <label class="danger">Maybe? <input type="radio" name="dangerLevel"></label><br>
+
+                <label class="danger">No <input type="radio" name="dangerLevel"></label><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information/Comments</legend>
+                <label><textarea placeholder="Comments?" rows="10"></textarea></label>
+            </fieldset>
+
+            <label><input class="submit" type="submit" name="submit" value="Report Storm!"></label>
+        </form>
+        </div>
+    </main>
+
+    <footer>
+        <section class="contact">
+            <h6>Contact</h6>
+            Contact information placeholder 999.999.9999 123 Main St. Anytown, US 99999 Google Map
+        </section>
+        <section class="footer-bar">
+            <h6>Copyright</h6>
+            &copy;2018 | All Rights Reserved | CumulusWatch | <span id="currentdate">BROKEN</span>
+        </section>
+    </footer>
+    <script src="scripts/currentDate().js"></script>
+    <script src="scripts/range.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+
+</html>

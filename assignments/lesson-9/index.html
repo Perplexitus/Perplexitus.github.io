@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <meta name="author" content="Tyler Anderson">
+    <meta name="description" content="Watch for the clouds!">
+    <link rel="icon" href="/assignments/lesson-9/images/Icon-128px.jpg">
+    <meta name="keywords" content="Weather........................................................................................................................................ (<-Tags)">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="/assignments/lesson-9/styles/main(small)-9.css">
+    <link rel="stylesheet" href="/assignments/lesson-9/styles/medium-9.css">
+    <link rel="stylesheet" href="/assignments/lesson-9/styles/large-9.css">
+    <!-- Font style -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>CumulusWatch</h1>
+        <h4 class="motto">Always watching those clouds.</h4>
+
+        <div class="navAll">
+            <div class="hamburger">
+                <ul>
+                    <li class="hamburgerBar"><button id="navButton" onclick="toggleMenu()"></button></li>
+                    <li class="hamburgerBar"></li>
+                    <li class="hamburgerBar"></li>
+                </ul>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li id="homeButton"><a href="index.html">Home</a>
+                    </li>
+                    <li><a href="franklin-9.html">Franklin</a></li>
+                    <li><a href="#">Springfield</a></li>
+                    <li><a href="#">Greenville</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery-9.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <figure>
+            <img class="logo" src="/assignments/lesson-9/images/logo.jpg" alt="Logo" sizes="50vw" srcset="
+            /assignments/lesson-9/images/logo-small-320px.jpg 320w,
+            /assignments/lesson-9/images/logo-medium-600px.jpg 600w,
+            /assignments/lesson-9/images/logo-large-1024px.jpg 1024w">
+            <p class="credits">
+                <a href="http://www.freepik.com">Designed by Freepik</a>
+            </p>
+            <figcaption>This image represents the unpredictability of life and nature, together.</figcaption>
+        </figure>
+    </header>
+
+
+
+
+
+    <!-- Content -->
+
+
+    <main class="index-main">
+        <h2>Home</h2>
+
+        <div class="franklin">
+            <section class="weather-summary">
+                <h2>Franklin</h2>
+                <div class="current">
+                    <figure id="index-image1">
+                        <img src="/assignments/lesson-9/images/franklin-large-1024px.jpg" alt="Franklin image" sizes="50vw" srcset="images/franklin-small-320px.jpg 320w,
+                        images/franklin-medium-600px.jpg 600w,
+                        images/franklin-large-1024px.jpg 1024w">
+                        <figcaption>A nice sunny day</figcaption>
+                    </figure>
+                </div>
+                <h3>Weather Summary</h3>
+
+                <div class="highlow">
+                    <p>Current:<span id="franklin-temp-temp">BROKEN</span>&deg;F</p>
+
+                    <p class="temp-high">High:<span id="franklin-high-number">81</span>&deg;F</p>
+
+                    <p class="temp-low">Low:<span id="franklin-low-number">49</span>&deg;F</p>
+
+                    <p>Wind Speed:<span id="franklin-windSpeed">4</span>mph<span id="franklin-windDirection">NW</span></p>
+
+                    <p>Wind Chill: <span id="franklin-windchill"></span>&deg;F</p><br>
+
+                    <div id="conditions">
+                        <h4>Conditions:</h4>
+                        <p><span id="franklin-description">$Relative HTML Description tag$</span><span id="franklin-icon"></span></p>
+                    </div>
+                </div>
+                <article id="article-franklin">
+                    <h3>The Town of Franklin - Est. <span id="franklin-founded">1000 B.C.!!</span></h3>
+                    <sub>"<span id="franklin-motto">Motto BROKEN! >:(</span>"</sub>
+                    <div><br>
+                        <h4>Town Article </h4>
+                        <p id="franklin-town-info">
+                            The town of Franklin has a population of
+                            <span id="franklin-population">This paragraph is borin- ... broken.</span>people and has an annual rainfall of
+                            <span id="franklin-rainfall">IT'S DRY HERE -- BROKEN.</span>inches per year.
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- SPringfield -->
+
+        <div class="springfield">
+            <section class="weather-summary">
+                <h2>Springfield</h2>
+                <div class="current">
+                    <figure id="index-image2">
+                        <img src="/assignments/lesson-9/images/franklin-large-1024px.jpg" alt="Springfield image" sizes="50vw" srcset="images/franklin-small-320px.jpg 320w,images/franklin-medium-600px.jpg 600w,images/franklin-large-1024px.jpg 1024w">
+                        <figcaption>A nice sunny day</figcaption>
+                    </figure>
+                </div>
+                <h3>Weather Summary</h3>
+
+                <div class="highlow">
+                    <p>Current:<span id="springfield-temp-temp">Mr. Temperature</span>&deg;F</p>
+
+                    <p class="temp-high">High:<span id="springfield-high-number">81</span>&deg;F</p>
+
+                    <p class="temp-low">Low:<span id="springfield-low-number">49</span>&deg;F</p>
+
+                    <p>Wind Speed:<span id="springfield-windSpeed">4</span>mph<span id="springfield-windDirection">NW</span></p>
+
+                    <p>Wind Chill: <span id="springfield-windchill"></span>&deg;F</p><br>
+
+                    <div class="conditions">
+                        <h4>Precipitation:</h4>
+                        <p>$Relative HTML Precipitation tag$</p>
+                    </div>
+                </div>
+
+
+                <br>
+
+                <article id="article-springfield">
+                    <h3>The Town of springfield - Est. <span id="springfield-founded">1000 B.C.!!</span></h3>
+                    <sub>"<span id="springfield-motto">Motto BROKEN! >:(</span>"</sub>
+                    <div><br>
+                        <h4>Town Article </h4>
+                        <p id="springfield-town-info">
+                            The town of Springfield has a population of<span id="springfield-population">This paragraph is borin- ... broken.</span>people, and has an annual rainfall of<span id="springfield-rainfall">IT'S DRY HERE -- BROKEN.</span>inches per year.
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="greenville">
+            <section class="weather-summary">
+                <h2>Greenville</h2>
+                <div class="current">
+                    <figure id="index-image3">
+                        <img src="/assignments/lesson-9/images/franklin-large-1024px.jpg" alt="Greenville image" sizes="50vw" srcset="images/franklin-small-320px.jpg 320w,images/franklin-medium-600px.jpg 600w,images/franklin-large-1024px.jpg 1024w">
+                        <figcaption>A nice sunny day</figcaption>
+                    </figure>
+                </div>
+                <h3>Weather Summary</h3>
+
+                <div class="highlow">
+                    <p>Current:<span id="greenville-temp-temp">Mr. Temperature</span>&deg;F</p>
+
+                    <p class="temp-high">High:<span id="greenville-high-number">81</span>&deg;F</p>
+
+                    <p class="temp-low">Low:<span id="greenville-low-number">49</span>&deg;F</p>
+
+                    <p>Wind Speed:<span id="greenville-windSpeed">4</span>mph<span id="greenville-windDirection">NW</span></p>
+
+                    <p>Wind Chill: <span id="greenville-windchill"></span>&deg;F</p><br>
+
+                    <div class="conditions">
+                        <h4>Precipitation:</h4>
+                        <p>$Relative HTML Precipitation tag$</p>
+                        <br>
+                    </div>
+                </div>
+
+
+                <br>
+
+
+                <article id="article-greenville">
+                    <h3>The Town of Greenville - Est. <span id="greenville-founded">1000 B.C.!!</span></h3>
+                    <sub>"<span id="greenville-motto">Motto BROKEN! >:(</span>"</sub>
+                    <div><br>
+                        <h4>Town Article </h4>
+                        <p id="greenville-town-info">
+                            The town of greenville has a population of
+                            <span id="greenville-population">This paragraph is borin- ... broken.</span> and has an annual rainfall of
+                            <span id="greenville-rainfall">IT'S DRY HERE -- BROKEN.</span>inches per year.
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <br>
+        <aside>Have you seen our<a href="gallery-9.html">Gallery</a>?</aside>
+        <br>
+        <p>Special thanks to <a href="openweathermap.org" target="_blank">OpenWeatherMap.org</a> for the accurate weather information.</p>
+    </main>
+
+    <footer>
+        <section class="contact">
+            <h6>Contact</h6>
+            Contact information 123 Main St. Anytown, US 99999 Google Map
+        </section>
+        <section class="footer-bar">
+            <h6>Copyright</h6>
+            &copy;2018 | All Rights Reserved | CumulusWatch | <span id="currentdate">BROKEN</span>
+        </section>
+    </footer>
+
+    <script src="scripts/currentDate().js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+    <!-- JSON data for dynamic weather data -->
+    <script src="scripts/weather.js"></script>
+</body>
+
+</html>

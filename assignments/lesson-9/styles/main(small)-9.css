@@ -1,0 +1,346 @@
+@media only screen and (min-width: 15em) {
+    header, main, footer, body {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        text-align: center;
+        font-size: 1.2em;
+        min-width: 15em;
+        max-width: 95%;
+        margin: 0 auto;
+
+    }
+
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 0px red solid; /* Debugging */
+        margin: 0.2em;
+    }
+
+    header {
+        background: #0cc2dd;
+        color: #000;
+    }
+
+    header figure {
+        min-width: 80%;
+        padding: 0;
+        margin: .5em;
+    }
+
+    .logo {
+        min-width: 100%;
+    }
+
+    main {
+        background: #a1dbec;
+        flex-flow: column nowrap;
+    }
+    /*Navigation bar at the top */
+    /* Hamburger! */
+    .navAll {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        flex-flow: column nowrap;
+        margin: 10px 10px 0 0;
+        align-items: flex-end;
+    }
+
+    #navButton {
+        /* <Button> in the hamburger */
+        width: 4.5rem;
+        height: 4.5rem;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 20;
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    #navButton:focus {
+        outline: none;
+    }
+
+    .hamburger {
+        /* Div container for hamburger and nav menu. */
+        display: flex;
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        flex-flow: column nowrap;
+    }
+
+    .hamburger ul {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 0;
+        align-items: flex-end;
+        padding: 0;
+    }
+
+    .hamburgerBar {
+        /* Defines black lines of the hamburger. */
+        width: 35px;
+        height: 6px;
+        background-color: black;
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: .3em;
+        position: relative;
+        border-radius: 25px;
+
+    }
+
+
+
+/*****************Hamburger Onclick*************/
+
+@media only screen and (max-width: 37.5em) {
+    .navbar.responsive {
+        position: relative;
+        display: flex;
+        border: 1px solid #ccc;
+        border-width: 2px 0;
+        text-align: center;
+        background-color: #333;
+        max-width: 100%;
+        min-width: 30%;
+    }
+
+    .navbar.responsive li {
+        background-color: #000;
+        display: flex;
+        width: 100%;
+        margin: 0;
+        border: 2px solid #ddd;
+        padding: .2rem;
+        justify-content: center;
+
+    }
+
+    .navbar .responsive ul {
+        display: flex;
+    }
+
+    .navbar.responsive li a {
+        padding: .4rem;
+        text-align: center;
+        display: flex;
+        text-decoration: none;
+        border: solid 1.5px grey;
+        flex-flow: column nowrap;
+    }
+
+    .navbar.responsive li a:hover {
+        background: #ddd;
+        color: black;
+    }
+}
+
+
+/***************************************/
+
+.navbar {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul {
+    padding: 0;
+    margin: 0;
+
+}
+
+.navbar li {
+    display: none;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar li a {
+    padding: 1px;
+    text-decoration: none;
+    color: #a1dbec;
+    border: solid 1.5px grey;
+}
+
+
+
+/* Navbar link block color change on hover
+
+.navbar a:hover {
+background: #ddd;
+color: black;
+}
+*/
+
+img {
+    margin: 0;
+    min-width: 25%;
+    max-width: 100%;
+}
+
+footer {
+    font-size: smaller;
+    background: #0cc2dd;
+    margin: 0 auto;
+    color: #000
+}
+
+
+.forecast {
+    display: none;
+}
+
+p.temp-high {
+    color: red;
+}
+
+p.temp-low {
+    color: blue;
+}
+
+.current {
+    color: grey;
+    font-size: 1.2em;
+}
+
+.credits {
+    display: none;
+}
+
+
+
+/* *********** Gallery Specifications ********************** */
+
+.gallery-main * {
+    border:0px red solid;  /* Debug */
+    margin: 0;
+
+}
+
+* {
+    border: 0px red solid;
+}
+
+.gallery-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.gallery-main figure {
+    margin-top: 2em;
+    align-self: flex-start;
+    align-self: stretch;
+}
+
+.gallery-main figcaption {
+    font-size: .7em;
+}
+
+.gallery-main #local-image1 {
+    width: 100%;
+}
+
+    .gallery-main h2 {
+        margin-top: 1em;
+    }
+
+
+
+
+
+
+/* ----------- Storm Center Form -------------- */
+
+    main {
+        width: 100%;
+    }
+
+    fieldset {
+        border: 3px solid #888;
+        border-radius: 30px;
+    }
+
+    fieldset * {
+        font-size: 1.2em;
+    }
+
+    .submit {
+        font-size: 1.2em;
+    }
+
+
+    input, textarea {
+        border-radius: 30px;
+        background-color: #dceeed;
+        color: #000;
+        text-align: center;
+        padding: 5px;
+    }
+
+    label {
+        display: block;
+    }
+
+    .rangeContainer {
+        width: 100%;
+    }
+
+    #range {
+        -webkit-appearance: none;
+        width: 70%;
+        height: 15px;
+        border-radius: 5px;
+        background: #eee;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+        background: linear-gradient(to right, green , red);
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #002f3f;
+        cursor: pointer;
+
+}
+
+    .required {
+        border-left: 10px solid red;;
+    }
+
+    .dangerDanger:checked{
+        border: 10px solid green;
+    }
+
+    #franklin-icon {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+    }
+
+}

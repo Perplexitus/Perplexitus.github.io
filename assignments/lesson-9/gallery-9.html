@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery</title>
+    <meta name="author" content="Tyler Anderson">
+    <meta name="description" content="What seems to be beautiful images of the local landscape, is actually just disguised web images">
+    <link rel="icon" href="/assignments/lesson-9/images/Icon-128px.jpg">
+    <meta name="keywords" content="Weather........................................................................................................................................ (<-Tags)">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="/assignments/lesson-9/styles/main(small)-9.css">
+    <link rel="stylesheet" href="/assignments/lesson-9/styles/medium-9.css">
+    <link rel="stylesheet" href="/assignments/lesson-9/styles/large-9.css">
+    <!-- Font style -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>CumulusWatch</h1>
+        <h4 class="motto">Always watching those clouds.</h4>
+
+        <div class="navAll">
+            <div class="hamburger">
+                <ul>
+                    <li class="hamburgerBar"><button id="navButton" onclick="toggleMenu()"></button></li>
+                    <li class="hamburgerBar"></li>
+                    <li class="hamburgerBar"></li>
+                </ul>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li id="homeButton"><a href="index.html">Home</a>
+                    </li>
+                    <li><a href="franklin-9.html">Franklin</a></li>
+                    <li><a href="#">Springfield</a></li>
+                    <li><a href="#">Greenville</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery-9.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <figure>
+            <img class="logo" src="/assignments/lesson-9/images/logo.jpg" alt="Logo" sizes="50vw" srcset="/assignments/lesson-9/images/logo-small-320px.jpg 320w, /assignments/lesson-9/images/logo-medium-600px.jpg 600w, /assignments/lesson-9/images/logo-large-1024px.jpg 1024w">
+            <p class="credits">
+                <a href="http://www.freepik.com">Designed by Freepik</a>
+            </p>
+            <figcaption>This image represents the unpredictability of life and nature, together.</figcaption>
+        </figure>
+    </header>
+
+
+    <main class="gallery-main">
+        <h2>Le' Gallery</h2>
+
+        <figure>
+            <img id="local-image1" src="/assignments/lesson-9/images/franklin-large-1024px.jpg" alt="Franklin image" sizes="50vw" srcset="images/franklin-small-320px.jpg 320w, images/franklin-medium-600px.jpg 600w, images/franklin-large-1024px.jpg 1024w">
+            <figcaption>A nice sunny day</figcaption>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis elit nec ante iaculis auctor. Nunc mollis laoreet odio, eget volutpat urna tristique sed. Cras suscipit maximus quam, sollicitudin eleifend urna condimentum sit amet. In enim erat, fringilla semper lobortis ac, scelerisque nec leo. Sed ut dolor quis ligula maximus pulvinar. </p>
+        </figure>
+
+        <figure>
+            <img src="images/worst-weather.jpg" alt="Sunlight and lightning">
+            <figcaption>The worst of the carnage.</figcaption>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis elit nec ante iaculis auctor. Nunc mollis laoreet odio, eget volutpat urna tristique sed. Cras suscipit maximus quam, sollicitudin eleifend urna condimentum sit amet. In enim erat, fringilla semper lobortis ac, scelerisque nec leo. Sed ut dolor quis ligula maximus pulvinar. </p>
+        </figure>
+
+        <figure>
+            <img src="images/lightning-strike-480x360.jpg" alt="lone lightning strike">
+            <figcaption>The weather seems to have calmed down.</figcaption>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis elit nec ante iaculis auctor. Nunc mollis laoreet odio, eget volutpat urna tristique sed. Cras suscipit maximus quam, sollicitudin eleifend urna condimentum sit amet. In enim erat, fringilla semper lobortis ac, scelerisque nec leo. Sed ut dolor quis ligula maximus pulvinar. </p>
+        </figure>
+
+        <figure>
+            <img id="local-image2" src="images/dark-clouds.jpg" alt="Cloudy landscape with rain.">
+            <figcaption>The rain is letting up!</figcaption>
+            <p>And it came to pass that I, Nephi, said unto my father: I will go and do the things which the Lord hath commanded, for I know that Lord giveth no commandments unto the children of men, save He shall prepare a way for them that they may accomplish the thing which He commandeth them.</p>
+        </figure>
+
+        <figure>
+            <img src="images/rainbow-weather.jpg" alt="Rainbow in the sky">
+            <figcaption>Double rainbow!!!</figcaption>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis elit nec ante iaculis auctor. Nunc mollis laoreet odio, eget volutpat urna tristique sed. Cras suscipit maximus quam, sollicitudin eleifend urna condimentum sit amet. In enim erat, fringilla semper lobortis ac, scelerisque nec leo. Sed ut dolor quis ligula maximus pulvinar. </p>
+        </figure>
+
+        <figure>
+            <img src="images/sunny-sky.jpg" alt="sunny weater">
+            <figcaption>Fix me!</figcaption>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis elit nec ante iaculis auctor. Nunc mollis laoreet odio, eget volutpat urna tristique sed. Cras suscipit maximus quam, sollicitudin eleifend urna condimentum sit amet. In enim erat, fringilla semper lobortis ac, scelerisque nec leo. Sed ut dolor quis ligula maximus pulvinar. </p>
+        </figure>
+    </main>
+
+    <footer>
+        <section class="contact">
+            <h6>Contact</h6>
+            Contact information placeholder 123 Main St. Anytown, US 99999
+        </section>
+        <section class="footer-bar">
+            <h6>Copyright</h6>
+            &copy;2018 | All Rights Reserved | CumulusWatch | <span id="currentdate">BROKEN</span>
+        </section>
+    </footer>
+
+    <script src="scripts/currentDate().js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+
+</html>
