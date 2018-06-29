@@ -24,6 +24,8 @@
             return;
         }
     }
+        currentDate();
+        navActive();
+
 }
 includeHTML();
-var document = document.currentScript.ownerDocument;

@@ -1,3 +1,4 @@
+function currentDate() {
 var date = new Date();
 
 //Ask date object for the day of the week.
@@ -10,3 +11,4 @@ var monthNames = ["January", "February", "March", "April", "May", "June", "July"
 //Output day of the week.
 document.getElementById("currentDate").innerHTML = weekDays[dayNumber] + ", " + date.getDate() + " " + monthNames[date.getMonth()] + " " + date.getFullYear();
 
+}

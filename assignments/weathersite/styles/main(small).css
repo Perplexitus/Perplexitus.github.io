@@ -189,9 +189,8 @@
     border: solid 1.5px grey;
 }
 
-    .navbar li a:visited {
-        background-color: #a1dbec;
-        color: #fff;
+    .navActive {
+        background-color: #aaa;
     }
 
 
@@ -299,7 +298,6 @@ p.temp-low {
 
     fieldset * {
         font-size: 1.2em;
-        min-width:
     }
 
     .submit {
