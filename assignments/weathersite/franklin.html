@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head id="franklin-head">
+    <head>
+        <div includefile="modules/meta.html">
+        </div>
     <title>Franklin City</title>
     <meta name="description" content="Watch for the clouds! Local weather for the Franklin area.">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
 
-    <header includefile="header-nav">
+    <header includefile="modules/header-nav.html">
     </header>
 
     <main>
         <h2>Franklin Weather</h2>
-        <figure>
-        </figure>
         <section class="weather-summary">
             <h3>Weather Summary</h3>
             <div class="highlow">
@@ -26,8 +25,6 @@
                 <p>Wind Speed:<span id="windSpeed">4</span>mph<span id="windDirection">NW</span></p>
 
                 <p>Wind Chill: <span id="windchill"></span>&deg;F</p><br>
-
-                <p>$Another relative HTML tag$<br> Something or another about many much normal winds.</p>
             </div>
             <section class="forecast">
                 <h3>Ten Day Forecast</h3>
@@ -79,10 +76,11 @@
             </div>
         </section>
         <br>
+        <div class="current">
         <article id="article1">
             <h3>Franklin Breaks Record!</h3>
             <figure>
-                <img id="local-image2" src="#" alt="Cloudy landscape with rain. (Broken for loading purposes)">
+                <img id="local-image2" src="images/franklin-large-1024px.jpg" alt="Cloudy landscape with rain." srcset="images/franklin-small-320px.jpg 320w,images/franklin-medium-600px.jpg 600w,images/franklin-large-1024px.jpg 1024w">
             </figure>
 
             <div>
@@ -92,22 +90,30 @@
                 </p>
             </div>
         </article>
-        <aside><a href="gallery-9.html">Gallery</a></aside>
+            <br>
+        <aside><p>Try looking at our <a href="gallery.html">Gallery.</a></p></aside>
         <br>
-
+        </div>
     </main>
 
-    <footer includefile="franklin-footer">
+    <footer>
+        <div includefile="modules/footer.html"></div>
+        <section class="footer-bar">
+            <h6>Copyright</h6>
+            &copy;2018 | All Rights Reserved | CumulusWatch | <span id="currentDate">BROKEN</span>
+        </section>
     </footer>
 
-    <!-- Import module -->
-    <script src="js/include.js"></script>
 
-    <!-- Regular JavaScript -->
 
-    <script src="/assignments/weathersite/scripts/currentDate().js"></script>
-    <script src="/assignments/weathersite/scripts/hamburger.js"></script>
+    <!-- JavaScript -->
+
     <script src="/assignments/weathersite/scripts/windchill.js"></script>
+    <script src="/assignments/weathersite/scripts/hamburger.js"></script>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/currentDate().js"></script>
+
+
 
 
 </body>

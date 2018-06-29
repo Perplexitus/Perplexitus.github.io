@@ -135,4 +135,8 @@
         margin: 1em 0 1em 0;
     }
 
+    .weather-summary {
+        box-shadow: 15px 15px 15px;
+    }
+
 }

@@ -2,16 +2,14 @@
 <html lang="en-us">
 
 <head>
-    IMPORT
+    <div includefile="modules/meta.html"></div>
     <title>Home Page</title>
     <meta name="description" content="Watch for the clouds!">
 </head>
 
 <body>
 
-    <header>
-        IMPORT
-    </header>
+    <header includefile="modules/header-nav.html"></header>
 
 
     <!-- Content -->
@@ -21,15 +19,13 @@
         <h2>Home</h2>
 
         <div class="franklin">
+            <figure id="index-image1">
+                <img src="/assignments/weathersite/images/franklin-large-1024px.jpg" alt="Franklin image" sizes="50vw" srcset="images/franklin-small-320px.jpg 320w,images/franklin-medium-600px.jpg 600w,images/franklin-large-1024px.jpg 1024w">
+                <figcaption>A nice sunny day</figcaption>
+            </figure>
             <section class="weather-summary">
                 <h2>Franklin</h2>
                 <div class="current">
-                    <figure id="index-image1">
-                        <img src="/assignments/weathersite/images/franklin-large-1024px.jpg" alt="Franklin image" sizes="50vw" srcset="images/franklin-small-320px.jpg 320w,
-                        images/franklin-medium-600px.jpg 600w,
-                        images/franklin-large-1024px.jpg 1024w">
-                        <figcaption>A nice sunny day</figcaption>
-                    </figure>
                 </div>
                 <h3>Weather Summary</h3>
 
@@ -65,24 +61,16 @@
         </div>
 
 
-
-
-
-
-
-
-
-
         <!-- SPringfield -->
 
         <div class="springfield">
+            <figure id="index-image2">
+                <img src="/assignments/weathersite/images/franklin-large-1024px.jpg" alt="Springfield image" sizes="50vw" srcset="images/franklin-small-320px.jpg 320w,images/franklin-medium-600px.jpg 600w,images/franklin-large-1024px.jpg 1024w">
+                <figcaption>A nice sunny day</figcaption>
+            </figure>
             <section class="weather-summary">
                 <h2>Springfield</h2>
                 <div class="current">
-                    <figure id="index-image2">
-                        <img src="/assignments/weathersite/images/franklin-large-1024px.jpg" alt="Springfield image" sizes="50vw" srcset="images/franklin-small-320px.jpg 320w,images/franklin-medium-600px.jpg 600w,images/franklin-large-1024px.jpg 1024w">
-                        <figcaption>A nice sunny day</figcaption>
-                    </figure>
                 </div>
                 <h3>Weather Summary</h3>
 
@@ -127,13 +115,13 @@
 
 
         <div class="greenville">
+            <figure id="index-image3">
+                <img src="/assignments/weathersite/images/franklin-large-1024px.jpg" alt="Greenville image" sizes="50vw" srcset="images/franklin-small-320px.jpg 320w,images/franklin-medium-600px.jpg 600w,images/franklin-large-1024px.jpg 1024w">
+                <figcaption>A nice sunny day</figcaption>
+            </figure>
             <section class="weather-summary">
                 <h2>Greenville</h2>
                 <div class="current">
-                    <figure id="index-image3">
-                        <img src="/assignments/weathersite/images/franklin-large-1024px.jpg" alt="Greenville image" sizes="50vw" srcset="images/franklin-small-320px.jpg 320w,images/franklin-medium-600px.jpg 600w,images/franklin-large-1024px.jpg 1024w">
-                        <figcaption>A nice sunny day</figcaption>
-                    </figure>
                 </div>
                 <h3>Weather Summary</h3>
 
@@ -190,12 +178,17 @@
     </main>
 
     <footer>
-       IMPORT
+        <div includefile="modules/footer.html"></div>
+        <section class="footer-bar">
+            <h6>Copyright</h6>
+            &copy;2018 | All Rights Reserved | CumulusWatch | <span id="currentDate">BROKEN</span>
+        </section>
     </footer>
 
     <script src="scripts/currentDate().js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/include.js"></script>
 
     <!-- JSON data for dynamic weather data -->
     <script src="scripts/weather.js"></script>

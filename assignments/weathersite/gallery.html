@@ -2,17 +2,15 @@
 <html lang="en-us">
 
 <head>
-    IMPORT
+    <div includefile="modules/meta.html">
+    </div>
     <title>Gallery</title>
-    <meta name="description" content="What seems to be beautiful images of the local landscape, is actually just disguised web images">
-
+    <meta name="description" content="What seems to be beautiful images of the local landscape, are actually just disguised web images">
 </head>
 
 <body>
 
-    <header>
-        IMPORT
-    </header>
+    <header includefile="modules/header-nav.html"></header>
 
 
     <main class="gallery-main">
@@ -56,11 +54,16 @@
     </main>
 
     <footer>
-       IMPORT
+        <div includefile="modules/footer.html"></div>
+        <section class="footer-bar">
+            <h6>Copyright</h6>
+            &copy;2018 | All Rights Reserved | CumulusWatch | <span id="currentDate">BROKEN</span>
+        </section>
     </footer>
 
     <script src="scripts/currentDate().js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/include.js"></script>
 </body>
 
 </html>

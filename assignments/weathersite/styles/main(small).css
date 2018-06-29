@@ -38,6 +38,16 @@
         background: #a1dbec;
         flex-flow: column nowrap;
     }
+
+
+
+
+
+
+
+
+
+
     /*Navigation bar at the top */
     /* Hamburger! */
     .navAll {
@@ -149,7 +159,7 @@
 }
 
 
-/***************************************/
+/*******************Desgin of Nav Bar********************/
 
 .navbar {
     display: none;
@@ -179,15 +189,19 @@
     border: solid 1.5px grey;
 }
 
+    .navbar li a:visited {
+        background-color: #a1dbec;
+        color: #fff;
+    }
 
 
-/* Navbar link block color change on hover
+/******************************************/
 
-.navbar a:hover {
-background: #ddd;
-color: black;
-}
-*/
+
+
+
+
+
 
 img {
     margin: 0;
@@ -216,7 +230,7 @@ p.temp-low {
 }
 
 .current {
-    color: grey;
+    color: #000;
     font-size: 1.2em;
 }
 
@@ -224,6 +238,9 @@ p.temp-low {
     display: none;
 }
 
+    #local-image2 {
+        max-width: 60%;
+    }
 
 
 /* *********** Gallery Specifications ********************** */
@@ -282,6 +299,7 @@ p.temp-low {
 
     fieldset * {
         font-size: 1.2em;
+        min-width:
     }
 
     .submit {
@@ -341,6 +359,32 @@ p.temp-low {
         width: 32px;
         height: 32px;
         display: inline-block;
+    }
+
+
+    .submit-label {
+        display: inline-block;
+        padding: 1%;
+    }
+
+    .submit:hover {
+        background-color: #000;
+        color: #fff;
+    }
+
+
+
+
+
+
+    /* ******* Home/Index.html ************ */
+
+    .weather-summary, .town-article {
+        padding: 3px;
+        max-width: 80%;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 5px 5px 15px;
     }
 
 }

@@ -1,24 +1,29 @@
-function include() {
-    let file, xhttp;
-    let allElements = document.getElementsByTagName('*'); //get all elements on the page
-
-    for (let i = 0; i < allElements.length; i++) { // process all the elements looking for the custom attribute 'includefile'
-        file = allElements[i].getAttribute("includefile");
-        if (file) { // if the attribute is found, process an AJAX XMLHttpRequest
+    function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("includefile");
+        if (file) {
+            /*make an HTTP request using the attribute value as the file name:*/
             xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4) {
-                    if (this.status == 200) { allElements[i].innerHTML = this.responseText;}
-                    if (this.status == 400) { allElements[i].innerHTML = "Page not found!";}
-                    allElements[i].removeAttribute('includefile');
-                    include();
+                    if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                    if (this.status == 404) {elmnt.innerHTML = "HEY BOZO, CHECK YOUR INCLUDE.JS!!!!! >:l";}
+                    /*remove the attribute, and call this function once more:*/
+                    elmnt.removeAttribute("includefile");
+                    includeHTML();
                 }
-                xhttp.open('GET', 'includes/' + file, true); // matching file names in includes folder
-                xhttp.send();
-                return;
             }
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /*exit the function:*/
+            return;
         }
     }
 }
-
-include();  // initial function call
+includeHTML();
+var document = document.currentScript.ownerDocument;

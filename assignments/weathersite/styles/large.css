@@ -115,6 +115,13 @@
         min-width: 90%;
     }
 
-    
+    .weather-summary {
+        overflow: hidden;
+        max-width: 40%;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 15px 15px 15px;
+    }
+
 
 }

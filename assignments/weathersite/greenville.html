@@ -1,110 +1,120 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head>
-    IMPORT
-    <title>Greenville City</title>
-    <meta name="description" content="Watch for the clouds! Local weather for the Greeville area.">
-</head>
+    <head>
+        <div includefile="modules/meta.html">
+        </div>
+        <title>Greenville City</title>
+        <meta name="description" content="Watch for the clouds! Local weather for the Franklin area.">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-       IMPORT
-    </header>
+        <header includefile="modules/header-nav.html">
+        </header>
 
-    <main>
-        <h2>greenville Weather</h2>
-        <figure>
-        </figure>
-        <section class="weather-summary">
-            <h3>Weather Summary</h3>
-            <div class="highlow">
-                <p class="temp-high">High:<span id="greenville-high-number">81</span>&deg;F</p>
+        <main>
+            <h2>Greenville Weather</h2>
+            <section class="weather-summary">
+                <h3>Weather Summary</h3>
+                <div class="highlow">
+                    <p class="temp-high">High:<span id="high-number">81</span>&deg;F</p>
 
-                <p class="temp-low">Low:<span id="greenville-low-number">49</span>&deg;F</p>
+                    <p class="temp-low">Low:<span id="low-number">49</span>&deg;F</p>
 
-                <p>Wind Speed:<span id="greenville-windSpeed">4</span>mph<span id="greenville-windDirection">NW</span></p>
+                    <p>Wind Speed:<span id="windSpeed">4</span>mph<span id="windDirection">NW</span></p>
 
-                <p>Wind Chill: <span id="greenville-windchill"></span>&deg;F</p><br>
+                    <p>Wind Chill: <span id="windchill"></span>&deg;F</p><br>
+                </div>
+                <section class="forecast">
+                    <h3>Ten Day Forecast</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Day 1</th>
+                                <th>Day 2</th>
+                                <th>Day 3</th>
+                                <th>Day 4</th>
+                                <th>Day 5</th>
+                                <th>Day 6</th>
+                                <th>Day 7</th>
+                                <th>Day 8</th>
+                                <th>Day 9</th>
+                                <th>Day 10</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>89&deg;F</td>
+                                <td>87&deg;F</td>
+                                <td>78&deg;F</td>
+                                <td>75&deg;F</td>
+                                <td>72&deg;F</td>
+                                <td>72&deg;F</td>
+                                <td>79&deg;F</td>
+                                <td>83&deg;F</td>
+                                <td>85&deg;F</td>
+                                <td>89&deg;F</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
 
-                <p>$Another relative HTML tag$<br> Something or another about many much normal winds.</p>
-            </div>
-            <section class="forecast">
-                <h3>Ten Day Forecast</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Day 1</th>
-                            <th>Day 2</th>
-                            <th>Day 3</th>
-                            <th>Day 4</th>
-                            <th>Day 5</th>
-                            <th>Day 6</th>
-                            <th>Day 7</th>
-                            <th>Day 8</th>
-                            <th>Day 9</th>
-                            <th>Day 10</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>89&deg;F</td>
-                            <td>87&deg;F</td>
-                            <td>78&deg;F</td>
-                            <td>75&deg;F</td>
-                            <td>72&deg;F</td>
-                            <td>72&deg;F</td>
-                            <td>79&deg;F</td>
-                            <td>83&deg;F</td>
-                            <td>85&deg;F</td>
-                            <td>89&deg;F</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <div class="current">
-                <figure>
-                    <img id="local-image1" src="/assignments/weathersite/images/franklin-large-1024px.jpg" alt="greenville image" sizes="50vw" srcset="images/franklin-small-320px.jpg 320w,
+                <div class="current">
+                    <figure>
+                        <img id="local-image1" src="/assignments/weathersite/images/franklin-large-1024px.jpg" alt="Greenville image" sizes="50vw" srcset="images/franklin-small-320px.jpg 320w,
                                     images/franklin-medium-600px.jpg 600w,
                                     images/franklin-large-1024px.jpg 1024w">
-                    <figcaption>A nice sunny day</figcaption>
-                </figure>
-            </div>
-            <div class="conditions">
-                <h4>Precipitation:</h4>
-                <p>$Relative HTML Precipitation tag$ <br> Close to 4 inches this coming Thursday.</p>
+                        <figcaption>A nice sunny day</figcaption>
+                    </figure>
+                </div>
+                <div class="conditions">
+                    <h4>Precipitation:</h4>
+                    <p>$Relative HTML Precipitation tag$ <br> Close to 4 inches this coming Thursday.</p>
+                    <br>
+                    <br>
+                </div>
+            </section>
+            <br>
+            <div class="current">
+                <article id="article1">
+                    <h3>Franklin Breaks Record!</h3>
+                    <figure>
+                        <img id="local-image2" src="images/franklin-large-1024px.jpg" alt="Cloudy landscape with rain." srcset="images/franklin-small-320px.jpg 320w,images/franklin-medium-600px.jpg 600w,images/franklin-large-1024px.jpg 1024w">
+                    </figure>
+
+                    <div>
+                        <h4>Town Article</h4>
+                        <p class="town-article">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </article>
+                <aside><p>Try looking at our <a href="gallery.html">Gallery.</a></p></aside>
                 <br>
-                <br>
             </div>
-        </section>
-        <br>
-        <article id="article1">
-            <h3>greenville Breaks Record!</h3>
-            <figure>
-                <img id="local-image2" src="#" alt="Cloudy landscape with rain. (Broken for loading purposes)">
-            </figure>
+        </main>
 
-            <div>
-                <h4>Town Article</h4>
-                <p class="town-article">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-        </article>
-        <aside><a href="gallery-9.html">Gallery</a></aside>
-        <br>
+        <footer>
+            <div includefile="modules/footer.html"></div>
+            <section class="footer-bar">
+                <h6>Copyright</h6>
+                &copy;2018 | All Rights Reserved | CumulusWatch | <span id="currentDate">BROKEN</span>
+            </section>
+        </footer>
 
-    </main>
 
-    <footer>
-       IMPORT
-    </footer>
 
-    <script src="scripts/currentDate().js"></script>
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/windchill.js"></script>
-</body>
+        <!-- JavaScript -->
+
+        <script src="/assignments/weathersite/scripts/windchill.js"></script>
+        <script src="/assignments/weathersite/scripts/hamburger.js"></script>
+        <script src="scripts/include.js"></script>
+        <script src="scripts/currentDate().js"></script>
+
+
+
+
+    </body>
 
 </html>

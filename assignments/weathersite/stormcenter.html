@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head>
+    <head includefile="/assignments/weathersite/modules/meta.html">
     <title>Storm Center</title>
     <meta name="description" content="Watch for the clouds! Local weather for the Franklin area.">
-    IMPORT
 </head>
 
 <body>
 
-    <header>
-        IMPORT
+    <header includefile="/assignments/weathersite/modules/header-nav.html">
     </header>
 
 
@@ -88,11 +86,23 @@
     </main>
 
     <footer>
-       IMPORT
+        <div includefile="/assignments/weathersite/modules/footer.html">
+        </div>
+        <section class="footer-bar">
+            <h6>Copyright</h6>
+            &copy;2018 | All Rights Reserved | CumulusWatch | <span id="currentDate">BROKEN</span>
+        </section>
     </footer>
-    <script src="scripts/currentDate().js"></script>
+
+
+
+
     <script src="scripts/range.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentDate().js"></script>
+    <script src="scripts/include.js"></script>
+
+
 </body>
 
 </html>
