@@ -25,7 +25,7 @@
         }
     }
         currentDate();
-        navActive();
+        wayfinder();
 
 }
 includeHTML();

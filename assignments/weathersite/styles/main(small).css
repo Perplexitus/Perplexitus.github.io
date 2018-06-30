@@ -189,8 +189,8 @@
     border: solid 1.5px grey;
 }
 
-    .navActive {
-        background-color: #aaa;
+    .active a {
+        background-color: red;
     }
 
 
