@@ -76,9 +76,13 @@
         border: solid 1.5px grey;
     }
 
+    .navbar .active a {
+        color: #000
+    }
+
     .forecast {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         justify-content: center;
         font-size: .7em;
     }
@@ -87,6 +91,9 @@
         border: 2px solid grey;
         padding: 1px;
         margin: 0;
+    }
+
+    .forcast h3 {
 
     }
 
@@ -99,6 +106,10 @@
         color: black;
     }
 
+    .active a {
+        background-color: #ddd;
+        color: black;
+    }
 
 
 /* ***********Gallery.html *********** */
@@ -145,6 +156,11 @@
 
     .weather-summary {
         box-shadow: 15px 15px 15px;
+    }
+
+
+    #weatherCenter-text {
+        width: 80%;
     }
 
 }

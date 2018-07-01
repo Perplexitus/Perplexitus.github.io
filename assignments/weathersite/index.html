@@ -38,8 +38,6 @@
 
                     <p>Wind Speed:<span id="franklin-windSpeed">4</span>mph<span id="franklin-windDirection">NW</span></p>
 
-                    <p>Wind Chill: <span id="franklin-windchill"></span>&deg;F</p><br>
-
                     <div id="conditions">
                         <h4>Conditions:</h4>
                         <p><span id="franklin-description">$Relative HTML Description tag$</span><span id="franklin-icon"></span></p>
@@ -64,10 +62,6 @@
         <!-- SPringfield -->
 
         <div class="springfield">
-            <figure id="index-image2">
-                <img src="/assignments/weathersite/images/franklin-large-1024px.jpg" alt="Springfield image" sizes="50vw" srcset="images/franklin-small-320px.jpg 320w,images/franklin-medium-600px.jpg 600w,images/franklin-large-1024px.jpg 1024w">
-                <figcaption>A nice sunny day</figcaption>
-            </figure>
             <section class="weather-summary">
                 <h2>Springfield</h2>
                 <div class="current">
@@ -83,11 +77,9 @@
 
                     <p>Wind Speed:<span id="springfield-windSpeed">4</span>mph<span id="springfield-windDirection">NW</span></p>
 
-                    <p>Wind Chill: <span id="springfield-windchill"></span>&deg;F</p><br>
-
                     <div class="conditions">
-                        <h4>Precipitation:</h4>
-                        <p>$Relative HTML Precipitation tag$</p>
+                        <h4>Conditions:</h4>
+                        <p><span id="springfield-description">$Relative HTML Description tag$</span><span id="springfield-icon"></span></p>
                     </div>
                 </div>
 
@@ -104,7 +96,12 @@
                         </p>
                     </div>
                 </article>
+
             </section>
+            <figure id="index-image2">
+                <img src="/assignments/weathersite/images/franklin-large-1024px.jpg" alt="Springfield image" sizes="50vw" srcset="images/franklin-small-320px.jpg 320w,images/franklin-medium-600px.jpg 600w,images/franklin-large-1024px.jpg 1024w">
+                <figcaption>A nice sunny day</figcaption>
+            </figure>
         </div>
 
 
@@ -134,11 +131,9 @@
 
                     <p>Wind Speed:<span id="greenville-windSpeed">4</span>mph<span id="greenville-windDirection">NW</span></p>
 
-                    <p>Wind Chill: <span id="greenville-windchill"></span>&deg;F</p><br>
-
                     <div class="conditions">
                         <h4>Precipitation:</h4>
-                        <p>$Relative HTML Precipitation tag$</p>
+                        <p><span id="greenville-description">$Relative HTML Description tag$</span><span id="greenville-icon"></span></p>
                         <br>
                     </div>
                 </div>
@@ -180,13 +175,12 @@
     <footer includefile="modules/footer.html">
     </footer>
 
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/nav.js"></script>
     <script src="scripts/currentDate().js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/windchill.js"></script>
     <script src="scripts/include.js"></script>
 
-    <!-- JSON data for dynamic weather data -->
-    <script src="scripts/weather.js"></script>
 </body>
 
 </html>

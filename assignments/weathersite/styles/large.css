@@ -33,6 +33,11 @@
         border: solid 1.5px grey;
     }
 
+    .active a {
+        background-color: #ddd;
+        color: black;
+    }
+
     footer {
         min-width: 95%;
     }
@@ -43,6 +48,10 @@
 
     .logo {
         min-width: 40%;
+    }
+
+    .forecast {
+
     }
 
 
@@ -97,27 +106,25 @@
 
 }
 
+    #stormCenter-text {
+        width: 80%;
+    }
 
 
     /* ********8Index**************/
 
-    #index-image1, #index-image3 {
-        float: right;
-    }
-
-    #index-image2 {
-        float: left;
-    }
 
     .franklin, .springfield, .greenville {
-        margin: 1em 0 1em 0;
+        margin: 2em 0 2em 0;
         max-width: 100%;
         min-width: 90%;
+        display: flex;
+        flex-flow: row nowrap;
     }
 
     .weather-summary {
         overflow: hidden;
-        max-width: 40%;
+        max-width: 100%;
         margin: 0 auto;
         background-color: #fff;
         box-shadow: 15px 15px 15px;

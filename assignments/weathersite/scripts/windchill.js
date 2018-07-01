@@ -1,3 +1,6 @@
+
+
+    //Franklin
 var ft = (parseInt(document.getElementById("high-number").innerHTML) + parseFloat(document.getElementById("low-number").innerHTML)) / 2;
 
 var fs = parseInt(document.getElementById("windSpeed").innerHTML);
