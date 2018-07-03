@@ -218,7 +218,7 @@ footer {
     font-size: smaller;
     background: #0cc2dd;
     margin: 0 auto;
-    color: #000
+    color: #000;
 }
 
 
@@ -246,11 +246,6 @@ p.temp-low {
     #local-image2 {
         max-width: 60%;
     }
-
-    .junk {
-        display: hidden;
-    }
-
 
 
 
@@ -304,17 +299,28 @@ p.temp-low {
 
 /* ----------- Storm Center Form -------------- */
 
-    main {
+    main * {
+        /* Debug */
+        border: 0px red solid;
+    }
+
+    .stormCenterMain {
         width: 100%;
+        margin: 0 auto;
     }
 
     fieldset {
         border: 3px solid #888;
         border-radius: 30px;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 100%;
+        min-width: 30%;
     }
 
     fieldset * {
         font-size: 1.2em;
+        margin: 0 auto;
     }
 
     .submit {
@@ -328,10 +334,22 @@ p.temp-low {
         color: #000;
         text-align: center;
         padding: 5px;
+        max-width: 80%;
+        min-width: 30%;
     }
 
     label {
         display: block;
+        max-width: 90%;
+        margin: 0 auto;
+        min-width: 20%;
+    }
+
+    .formContainer {
+        padding: 0;
+        margin: 0 auto;
+        max-width: 90%;
+        min-width: 30%;
     }
 
     .rangeContainer {
@@ -380,6 +398,7 @@ p.temp-low {
     .submit-label {
         display: inline-block;
         padding: 1%;
+        min-width: 100%;
     }
 
     .submit:hover {
@@ -404,6 +423,34 @@ p.temp-low {
 
     .weather-summary {
         border: #000 solid 2px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+/* ********** 404 *************/
+
+
+    #header404 figure {
+        display: none;
+    }
+    #body404 {
+        background-color: #a1dbec;
+    }
+    #body404 main {
+        margin: 2em;
+        background-color: #fff;
+    }
+    #body404 main a {
+        text-decoration-color: #d86c00;
+        color: #d86c00;
     }
 
 }

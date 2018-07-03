@@ -99,6 +99,7 @@
 
     footer {
         min-width: 95%;
+        margin-bottom: 2%;
     }
 
     .navbar a:hover {
@@ -132,6 +133,12 @@
 }
 
 
+/* Storm Center *****************/
+    .formContainer {
+        min-width: 80%;
+    }
+
+
 
 
 
@@ -161,6 +168,12 @@
 
     #weatherCenter-text {
         width: 80%;
+    }
+
+    #body404 main figure {
+        max-width: 50%;
+    }
+    #image404 {
     }
 
 }
