@@ -18,4 +18,9 @@ $(function () {
 
     var element = document.querySelector(".navigation > li:nth-child(3) > a");
     element.style.color = "rgb(255,0,0)";
+
+
+    $(".showcaseBtn").click(function() {
+        $(this).toggleClass;
+    })
 })

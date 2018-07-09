@@ -10,9 +10,9 @@
 <!-- Master Container Div -->
     <div class="container">
     <!-- Header Div containing the Logo & Navigation Links -->
-        <div class="header">
-            <div class="logo" id="alcoveLogo"></div>
-            <div class="navbar">
+        <header class="header">
+            <img class="logo" id="alcoveLogo">
+            <nav class="navbar">
                 <ul class="navigation">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Services</a></li>
@@ -21,13 +21,13 @@
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
-            </div>
-        </div>
+            </nav>
+        </header>
         <!-- Content Div -->
-        <div class="content">
+        <main class="content">
             <div class="headImage"></div>
             <!-- Get a Free Quote Form -->
-            <div class="registerForm">
+            <section class="registerForm">
                 <form id="GetAQuoteForm">
                     <img class="ReqAQuoteImg" src="images/quote.png" alt="">
                     <br>
@@ -51,10 +51,10 @@
                         <div class="FieldHolder"><button type="button" id="ReqAQuoteBtn" data-code="028">Request A Quote !</button></div>
                     </div>
                 </form>
-            </div>
+            </section>
             <h2 class="motto">We Bring Your Digital Dreams To Life</h2>
             <!-- Content Boxes Container Div -->
-            <div class="contentBoxes">
+            <section class="contentBoxes">
                 <div class="boxes box1">
                     <h2>The Values that Drive Us</h2>
                     <hr>
@@ -93,14 +93,23 @@
                         <option value="04">3D Animation</option>
                     </select>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
 
-        <div class="footer">
+        <footer class="footer">
             <h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
-        </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="animatedMenuBegin.htm" target="_blank">Animated Menu</a></li>
+                    <li><a href="DropDownMenuBegin.htm" target="_blank">Drop Down Menu</a></li>
+                    <li><a href="fruitBasketBegin.htm" target="_blank">Fruit Basket</a></li>
+                    <li><a href="InsertHTMLBegin.htm" target="_blank">Insert HTML</a></li>
+                    <li><a href="toggleButtonBegin.htm" target="_blank">Toggle Button</a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
 
-    <script src="scripts/index.js"></script>
+    <script src="scripts/index.js">        //All jQuary will go into the jQuery.js</script>
 </body>
 </html>

@@ -278,4 +278,10 @@ body {
     color:inherit;
 }
 
+.footer-right li {
+    display: inline;
+    float: right;
+    margin: 6px 9px;
+
+}
 
