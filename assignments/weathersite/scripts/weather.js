@@ -4,7 +4,7 @@ https://api.openweathermap.org/data/2.5/forecast?id=4156210&APPID=f828eb17d1ed42
 */
 
 let weatherRequest = new XMLHttpRequest();
-weatherRequest.open('GET', "https://api.openweathermap.org/data/2.5/weather?id=4156210&APPID=f828eb17d1ed42810e56b27db4b641da&units=imperial", true);
+weatherRequest.open('GET', "//api.openweathermap.org/data/2.5/weather?id=4156210&APPID=f828eb17d1ed42810e56b27db4b641da&units=imperial", true);
 weatherRequest.send();
 weatherRequest.onload = function () {
     // --------- FRANKLIN --------- //
@@ -37,7 +37,7 @@ weatherRequest.onload = function () {
     }
     document.getElementById("franklin-windDirection").innerHTML = windD;
     document.getElementById("franklin-description").innerHTML = weather.weather[0].description;
-    document.getElementById("franklin-icon").innerHTML = "<img + src=" + "'http://openweathermap.org/img/w/" + weather.weather[0].icon + ".png'>";
+    document.getElementById("franklin-icon").innerHTML = "<img + src=" + "'//openweathermap.org/img/w/" + weather.weather[0].icon + ".png'>";
 
 }
 
@@ -50,7 +50,7 @@ weatherRequest.onload = function () {
 
 // ---- Town Facts ---
 var townRequest = new XMLHttpRequest();
-townRequest.open("GET", "https://byui-cit230.github.io/weather/data/towndata.json");
+townRequest.open("GET", "//byui-cit230.github.io/weather/data/towndata.json");
 townRequest.send();
 townRequest.onload = function () {
     var towns = JSON.parse(townRequest.responseText);
@@ -87,7 +87,7 @@ townRequest.onload = function () {
 
     // Springfield
     var weatherRequestSpringfield = new XMLHttpRequest();
-    weatherRequestSpringfield.open('GET', "https://api.openweathermap.org/data/2.5/weather?id=4409896&APPID=f828eb17d1ed42810e56b27db4b641da&units=imperial", true);
+    weatherRequestSpringfield.open('GET', "//api.openweathermap.org/data/2.5/weather?id=4409896&APPID=f828eb17d1ed42810e56b27db4b641da&units=imperial", true);
     weatherRequestSpringfield.send();
     weatherRequestSpringfield.onload = function () {
         var weather = JSON.parse(weatherRequestSpringfield.responseText);
@@ -119,7 +119,7 @@ townRequest.onload = function () {
         }
         document.getElementById("springfield-windDirection").innerHTML = windD;
         document.getElementById("springfield-description").innerHTML = weather.weather[0].description;
-        document.getElementById("springfield-icon").innerHTML = "<img + src=" + "'http://openweathermap.org/img/w/" + weather.weather[0].icon + ".png'>";
+        document.getElementById("springfield-icon").innerHTML = "<img + src=" + "'//openweathermap.org/img/w/" + weather.weather[0].icon + ".png'>";
 
 
 
@@ -141,7 +141,7 @@ townRequest.onload = function () {
 
     //Greenville
     let weatherRequestGreenville = new XMLHttpRequest();
-    weatherRequestGreenville.open('GET', "https://api.openweathermap.org/data/2.5/weather?id=4580543&APPID=f828eb17d1ed42810e56b27db4b641da&units=imperial", true);
+    weatherRequestGreenville.open('GET', "//api.openweathermap.org/data/2.5/weather?id=4580543&APPID=f828eb17d1ed42810e56b27db4b641da&units=imperial", true);
     weatherRequestGreenville.send();
     weatherRequestGreenville.onload = function () {
         var weather = JSON.parse(weatherRequestGreenville.responseText);
@@ -173,7 +173,7 @@ townRequest.onload = function () {
         }
         document.getElementById("greenville-windDirection").innerHTML = windD;
         document.getElementById("greenville-description").innerHTML = weather.weather[0].description;
-        document.getElementById("greenville-icon").innerHTML = "<img + src=" + "'http://openweathermap.org/img/w/" + weather.weather[0].icon + ".png'>";
+        document.getElementById("greenville-icon").innerHTML = "<img + src=" + "'//openweathermap.org/img/w/" + weather.weather[0].icon + ".png'>";
 
 
     }
