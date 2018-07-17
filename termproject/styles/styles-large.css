@@ -1,0 +1,18 @@
+@media only screen and (min-width: 64em) {
+
+    * {
+        font-size: 1em;
+    }
+
+    .sideBar {
+        height: 75em;
+    }
+
+    footer {
+        align-items: center;
+        padding: 1em;
+    }
+
+
+
+}
