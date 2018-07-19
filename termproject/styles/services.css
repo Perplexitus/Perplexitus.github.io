@@ -1,0 +1,154 @@
+@import "../modules/nav.css" screen; /*Importing Nav menu from modules folder */
+@media only screen and (min-width: 15em) {
+
+    html {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(#e8e8e8, #c1c1c1);
+    }
+
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 0px red solid; /* Debugging */
+        text-align: center;
+        font-size: 1.05em;
+    }
+
+
+
+
+    header {
+        max-width: 100%;
+        background: #8d8741;
+        color: #fff;
+        padding-bottom: 3px;
+    }
+
+    .headerContainer {
+        display: flex;
+        justify-content: center;
+        padding: .7em;
+        align-items: center;
+        border-bottom: 10px solid #444;
+    }
+
+    .logoContainer {
+        margin: 0;
+        max-width: 4em;
+        min-width: 10%;
+        cursor: pointer;
+        position: relative;
+        align-self: flex-end;
+
+    }
+
+    .logo {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .title {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .title h1 {
+        padding: 0;
+        margin-bottom: 4%;
+    }
+
+    .title h6 {
+        padding: 0;
+        margin: 0
+    }
+
+    aside {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-flow: row-reverse;
+    }
+    .main-content {
+        max-width: 95%;
+        margin: 0 auto;
+        background: #fbeec1;
+    }
+
+    main div figure {
+        max-width: 100%;
+        margin: 1em auto;
+        background: #8d8741;
+        border-radius: 15px;
+        padding: 2%;
+        color: #fff
+    }
+    main div > figure {
+        border: 2px solid #000;
+    }
+
+    main div section {
+        min-height: 10em;
+        margin: 1em;
+        background: #fff;
+        padding: 1%;
+        border: 2px solid #000;
+        border-radius: 10px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .bikers {
+       min-width: 100%;
+
+    }
+    .newBike h3 a, .bikeRepair h3 a, .tour h3 a {
+        text-decoration: none;
+        color: #659dbd;
+    }
+    .newBike h3 a:hover, .bikeRepair h3 a:hover, .tour h3 a:hover {
+        color: #000
+    }
+
+
+
+
+
+    footer {
+        max-width: 100%;
+        background: #bc986a;
+        margin: 1em 0 0 0;
+    }
+    footer section h4 {
+        margin: 2%;
+        padding: 0;
+    }
+
+    .contact {
+        margin: 0 auto;
+        padding:  0;
+    }
+
+    .footer-bar {
+        margin: 0;
+        padding: 0;
+    }
+
+    .lastTour {
+        background: #659dbd;
+        padding: 1em;
+
+    }
+
+    .credits {
+        display: none;
+    }
+
+
+
+}
