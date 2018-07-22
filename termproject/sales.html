@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <div includefile="modules/meta.html">
-        </div>
-        <title>The Mountain Spoke Adventure Bicycle Tours</title>
-        <meta name="description" content="Details for previous and future bicycle tours.">
 
+    <head>
+        <title>The Mountain Spoke | Sales</title>
+        <meta name="description" content="Sales information for the various models of bicycles.">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Tyler Anderson">
@@ -16,18 +14,76 @@
         <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
         <!-- CSS Files -->
         <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="styles/styles-medium.css">
-        <link rel="stylesheet" href="styles/styles-large.css">
+        <link rel="stylesheet" href="styles/sales.css">
+        <link rel="stylesheet" href="styles/sales-medium.css">
+        <link rel="stylesheet" href="styles/sales-large.css">
     </head>
 
     <body>
-
         <header includefile="modules/header-nav.html">
         </header>
-        <body>
-        </body>
 
+        <main class="salesMain">
+            <aside class="sideBar" includefile="modules/sidebar.html"></aside>
+
+            <div class="main-content">
+                <h1>Sales</h1>
+                <div class="sectionDiv">
+                    <section class="sales1">
+                       <h2 class="credits">>:l</h2>
+                        <div class="buttons">
+                            <input class="Btn" type="button" onclick="bike1()" value="Prototype">
+                            <input class="Btn" type="button" onclick="bike2()" value="Orbea Gain">
+                            <input class="Btn" type="button" onclick="bike3()" value="Mach5.5">
+                        </div>
+                        <div class="images">
+                            <div class="displayBike1">
+                                <figure>
+                                    <img src="images/codeName-Prototype-1024.jpg" sizes="50vw" alt="Prototype Bicycle" srcset="images/codeName-Prototype-512.jpg 512w, images/codeName-Prototype-1024.jpg 1024w">
+                                </figure>
+                                <h4>Prototype Series X</h4>
+                                <ul>
+                                    <li>Carbon fiber composite body</li>
+                                    <li>Durable aluminum alloy brake rotors</li>
+                                    <li>Customized with our own brand of Duralubed&trade; bicycle chain</li>
+                                    <li>Customizable handle bars</li>
+                                    <li>3-piece crankset</li>
+                                </ul>
+                                <input class="Btn" type="button" value="Purchase Me!" onclick="location.href='thankyou.html'">
+                            </div>
+                            <div class="displayBike2">
+                                <figure>
+                                    <img src="images/Orbea-gain-1024.jpg" sizes="50vw" alt="Orbea Gain Bicycle" srcset="images/Orbea-gain-320.jpg 320w, images/Orbea-gain-640.jpg 640w, images/Orbea-gain-1024.jpg 1024w">
+                                </figure>
+                                <h4>Orbea Gain-Road</h4>
+                                <ul>
+                                    <li>Aluminum body</li>
+                                    <li>Alloy brakes</li>
+                                    <li>Customizable handle bars</li>
+                                    <li>Electric - Mode button on top of frame for modes.</li>
+                                    <li>Motor - 250W Power &amp; 40Nm torque</li>
+                                </ul>
+                                <input class="Btn" type="button" value="Purchase Me!" onclick="location.href='thankyou.html'">
+                            </div>
+                            <div class="displayBike3">
+                                <figure>
+                                    <img src="images/Mach5.5-1024.jpg" sizes="50vw" alt="Mach5.5 Mountain Bike" srcset="images/Mach5.5-1024.jpg 1024w, images/Mach5.5-640.jpg 640w, images/Mach5.5-320.jpg 320w ">
+                                </figure>
+                                <h4>Pivot Mach 5.5 Mountain Bike</h4>
+                                <ul>
+                                    <li>Carbon fiber composite body</li>
+                                    <li>Durable aluminum alloy brake rotors</li>
+                                    <li>Customized with our own brand of Duralubed&trade; bicycle chain</li>
+                                    <li>Customizable handle bars</li>
+                                    <li>3-piece crankset</li>
+                                </ul>
+                                <input class="Btn" type="button" value="Purchase Me!" onclick="location.href='thankyou.html'">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
 
         <footer class="footer" includefile="modules/footer.html">
         </footer>
@@ -37,7 +93,8 @@
         <script src="scripts/nav.js"></script>
         <script src="scripts/wayFind.js"></script>
         <script src="scripts/include.js"></script>
+        <script src="scripts/sales.js"></script>
 
     </body>
-</html>
 
+</html>

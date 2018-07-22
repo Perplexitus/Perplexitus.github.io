@@ -1,4 +1,4 @@
-@import "../modules/nav.css" screen; /*Importing Nav menu from modules folder */
+@import "../modules/header-nav.css" screen; /*Importing Nav menu from modules folder */
 @media only screen and (min-width: 15em) {
 
     html {
@@ -12,112 +12,89 @@
         box-sizing: border-box;
         border: 0px red solid; /* Debugging */
         text-align: center;
-        font-size: 1.05em;
-    }
-
-
-
-
-    header {
-        max-width: 100%;
-        background: #8d8741;
-        color: #fff;
-        padding-bottom: 3px;
-    }
-
-    .headerContainer {
-        display: flex;
-        justify-content: center;
-        padding: .7em;
-        align-items: center;
-        border-bottom: 10px solid #444;
-    }
-
-    .logoContainer {
-        margin: 0;
-        max-width: 4em;
-        min-width: 10%;
-        cursor: pointer;
-        position: relative;
-        align-self: flex-end;
-
-    }
-
-    .logo {
-        max-width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .title {
-        display: flex;
-        flex-flow: column;
-    }
-
-    .title h1 {
-        padding: 0;
-        margin-bottom: 4%;
-    }
-
-    .title h6 {
-        padding: 0;
-        margin: 0
+        font-size: 1.046em;
     }
 
     aside {
         display: none;
     }
 
+    img {
+        max-width: 100%;
+    }
+
     main {
         display: flex;
         flex-flow: row-reverse;
     }
+
     .main-content {
         max-width: 95%;
         margin: 0 auto;
         background: #fbeec1;
     }
 
-    main div figure {
-        max-width: 100%;
-        margin: 1em auto;
-        background: #8d8741;
-        border-radius: 15px;
-        padding: 2%;
-        color: #fff
-    }
-    main div > figure {
-        border: 2px solid #000;
-    }
-
-    main div section {
+    main div {
         min-height: 10em;
-        margin: 1em;
+        margin: 2%;
         background: #fff;
         padding: 1%;
         border: 2px solid #000;
         border-radius: 10px;
     }
 
-    img {
+     th {
+        text-align: center;
+        border-radius: 10px;
+
+    }
+
+    table {
+        margin: 2%;
+        border-radius: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+    }
+
+    tbody {
+        max-width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .titles th {
+        border-radius: 0;
         max-width: 100%;
     }
-
-    .bikers {
-       min-width: 100%;
-
-    }
-    .newBike h3 a, .bikeRepair h3 a, .tour h3 a {
-        text-decoration: none;
-        color: #659dbd;
-    }
-    .newBike h3 a:hover, .bikeRepair h3 a:hover, .tour h3 a:hover {
-        color: #000
+    .titles {
+        width:100%;
+        display: flex;
+        justify-content: space-between;
     }
 
+    th, td {
+        border: 1px solid #000;
+        margin: 2%;
 
+    }
 
+    tr {
+        border: 3px solid #000;
+        align-self: stretch;
+        align-items: baseline;
+    }
 
+    tfoot th {
+        font-size: 11px;
+        background-color: #7fb9c2;
+        padding: 7px;
+        border-radius: 10px;
+    }
 
     footer {
         max-width: 100%;
@@ -137,12 +114,6 @@
     .footer-bar {
         margin: 0;
         padding: 0;
-    }
-
-    .lastTour {
-        background: #659dbd;
-        padding: 1em;
-
     }
 
     .credits {

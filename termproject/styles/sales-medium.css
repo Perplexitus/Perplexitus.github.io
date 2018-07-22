@@ -8,39 +8,13 @@
     main div section{
         margin: 1em 1% 1em 1%;
     }
+    img {
+        min-width: 100%;
+    }
 
-    .main-content {
-        max-width: 85%;
+    .salesMain {
+        max-width: 95%;
         margin-left: 2%;
-    }
-
-    .sideBar {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-between;
-        background-color: #659dbd;
-        border: 2px solid #000;
-        margin: 2%;
-        border-radius: 15px;
-        height: 60em;
-        max-width: 25%;
-    }
-    .sideBar-images {
-        max-width: 100%;
-        padding: 0;
-        margin: 2%;
-    }
-    .sideBar-images:hover {
-        background-color: #8D8741;
-        box-shadow: 5px 5px 5px;
-    }
-    .sideBar-images figcaption {
-        font-size: 90%
-    }
-    .sideBar-images a {
-        text-decoration: none;
-        color: #000;
-        cursor: pointer;
     }
 
     .navAll {
@@ -49,8 +23,6 @@
     }
     .hamburger {
         display: none;
-    }
-    .navbar {
     }
     .navbar ul {
         display: flex;
@@ -84,14 +56,11 @@
 
     .sectionDiv {
         display: flex;
+
     }
 
-    .bikers {
-        margin-bottom: 2%;
-    }
-    .newBike figure a, .bikeRepair figure a {
-        text-decoration: none;
-        color: #fff
+    .sectionDiv li {
+        text-align: left;
     }
 
     footer {

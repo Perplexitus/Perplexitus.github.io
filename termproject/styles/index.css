@@ -98,6 +98,14 @@
 
     }
 
+
+
+    .thankyou {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
     .credits {
         display: none;
     }

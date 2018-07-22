@@ -4,12 +4,13 @@
         font-size: 1.02em;
     }
 
+
     .navbar ul li a {
         width: 8rem;
     }
 
-    .sideBar {
-        height: 75em;
+    img {
+        width: 100%;
     }
 
     footer {

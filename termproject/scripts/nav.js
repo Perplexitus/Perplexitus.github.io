@@ -9,7 +9,7 @@ $(function() {
 
 $(function() {
     $(window).resize(function(){
-        if ($(window).width() >= 601){
+        if ($(window).width() >= 600){
             $('navbar ul').slideDown(0);
         }
     }

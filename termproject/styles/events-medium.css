@@ -5,6 +5,7 @@
         font-size: 1.03em;
     }
 
+
     main div section{
         margin: 1em 1% 1em 1%;
     }
@@ -12,6 +13,12 @@
     .main-content {
         max-width: 85%;
         margin-left: 2%;
+    }
+
+
+    .sectionDiv {
+        display: flex;
+        flex-flow: column;
     }
 
     .sideBar {
@@ -81,18 +88,10 @@
         color: black;
     }
 
-
-    .sectionDiv {
-        display: flex;
+    #sideBar-title {
+        min-height: 0em;
     }
 
-    .bikers {
-        margin-bottom: 2%;
-    }
-    .newBike figure a, .bikeRepair figure a {
-        text-decoration: none;
-        color: #fff
-    }
 
     footer {
         display: flex;

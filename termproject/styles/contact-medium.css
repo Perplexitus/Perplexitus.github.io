@@ -5,13 +5,22 @@
         font-size: 1.03em;
     }
 
-    main div section{
+    main {
+        display: flex;
+        flex-flow: row-reverse;
+    }
+
+    .sectionDiv{
         margin: 1em 1% 1em 1%;
     }
 
     .main-content {
         max-width: 85%;
         margin-left: 2%;
+    }
+
+    img {
+        max-width: 100%;
     }
 
     .sideBar {
@@ -41,6 +50,11 @@
         text-decoration: none;
         color: #000;
         cursor: pointer;
+    }
+    .sideBar section {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 2%;
     }
 
     .navAll {
@@ -79,19 +93,6 @@
     .navbar li.active a {
         background-color: #bc986a;
         color: black;
-    }
-
-
-    .sectionDiv {
-        display: flex;
-    }
-
-    .bikers {
-        margin-bottom: 2%;
-    }
-    .newBike figure a, .bikeRepair figure a {
-        text-decoration: none;
-        color: #fff
     }
 
     footer {

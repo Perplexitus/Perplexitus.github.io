@@ -12,6 +12,22 @@
         height: 75em;
     }
 
+    tr {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        margin: 0;
+    }
+    td {
+        margin: 0;
+        padding: 2%;
+        flex-grow: 1;
+    }
+
+    .titles th {
+        flex-grow: 1;
+        padding: 2%;
+    }
     footer {
         align-items: center;
         padding: 1em;

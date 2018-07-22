@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <div includefile="modules/meta.html">
-        </div>
-        <title>The Mountain Spoke Adventure Bicycle Tours</title>
-        <meta name="description" content="Details for previous and future bicycle tours.">
 
+    <head>
+        <title>The Mountain Spoke | Bicycle Repair</title>
+        <meta name="description" content="Repair services from The Mountain Spoke">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Tyler Anderson">
@@ -16,18 +14,40 @@
         <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
         <!-- CSS Files -->
         <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="styles/styles-medium.css">
-        <link rel="stylesheet" href="styles/styles-large.css">
+        <link rel="stylesheet" href="styles/services.css">
+        <link rel="stylesheet" href="styles/services-medium.css">
+        <link rel="stylesheet" href="styles/services-large.css">
     </head>
 
     <body>
-
         <header includefile="modules/header-nav.html">
         </header>
-        <body>
-        </body>
 
+        <main class="servicesMain">
+            <aside class="sideBar" includefile="modules/sidebar.html"></aside>
+
+            <div class="main-content">
+                <h1>Repair Services</h1>
+                <div class="sectionDiv">
+                    <table class="servicesTable">
+                        <thead>
+                            <th>Bicycle repair options</th>
+                        </thead>
+
+                        <tbody class="tbody">
+                            <tr class="titles">
+                                <th>Package</th>
+                                <th>Details</th>
+                                <th>Price</th>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr><th colspan="3">Compiled by Bill's Bike and Run</th></tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </main>
 
         <footer class="footer" includefile="modules/footer.html">
         </footer>
@@ -37,7 +57,8 @@
         <script src="scripts/nav.js"></script>
         <script src="scripts/wayFind.js"></script>
         <script src="scripts/include.js"></script>
+        <script src="scripts/services.js"></script>
 
     </body>
-</html>
 
+</html>

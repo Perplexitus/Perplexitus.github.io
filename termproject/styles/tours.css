@@ -1,4 +1,4 @@
-@import "../modules/header-nav.css" screen; /*Importing Nav menu from modules folder */
+@import "../modules/header-nav.css" screen; /*Importing Nav menu and header from modules folder */
 @media only screen and (min-width: 15em) {
 
     html {
@@ -22,7 +22,7 @@
 
     main {
         display: flex;
-        flex-flow: column;
+        flex-flow: row-reverse;
         max-width: 95%;
         margin: 0 auto;
         background: #fbeec1;

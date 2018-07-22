@@ -14,6 +14,10 @@
         margin-left: 2%;
     }
 
+    .sideBar section{
+        min-height: 0em;
+    }
+
     .sideBar {
         display: flex;
         flex-flow: column wrap;
@@ -43,6 +47,9 @@
         cursor: pointer;
     }
 
+    .footer-sideBar {
+        min-height: 1em;
+    }
     .navAll {
         display: block;
         position: static;

@@ -1,49 +1,49 @@
 /* ************************* HEADER **************************/
 
 header {
-max-width: 100%;
-background: #8d8741;
-color: #fff;
-padding-bottom: 3px;
+    max-width: 100%;
+    background: #8d8741;
+    color: #fff;
+    padding-bottom: 3px;
 }
 
 .headerContainer {
-display: flex;
-justify-content: center;
-padding: .7em;
-align-items: center;
-border-bottom: 10px solid #444;
+    display: flex;
+    justify-content: center;
+    padding: .7em;
+    align-items: center;
+    border-bottom: 10px solid #444;
 }
 
 .logoContainer {
-margin: 0;
-max-width: 4em;
-min-width: 10%;
-cursor: pointer;
-position: relative;
-align-self: flex-end;
+    margin: 0;
+    max-width: 4em;
+    min-width: 10%;
+    cursor: pointer;
+    position: relative;
+    align-self: flex-end;
 
 }
 
 .logo {
-max-width: 100%;
-padding: 0;
-margin: 0;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .title {
-display: flex;
-flex-flow: column;
+    display: flex;
+    flex-flow: column;
 }
 
 .title h1 {
-padding: 0;
-margin-bottom: 4%;
+    padding: 0;
+    margin-bottom: 4%;
 }
 
 .title h6 {
-padding: 0;
-margin: 0
+    padding: 0;
+    margin: 0
 }
 
 
@@ -54,10 +54,12 @@ margin: 0
 
 
 
- /*************** NAVBAR ********************/
+/*************** NAVBAR ********************/
 
 /*Navigation bar at the top */
+
 /* Hamburger! */
+
 .navAll {
     display: flex;
     position: absolute;
@@ -69,16 +71,15 @@ margin: 0
 
 #navButton {
     /* <Button> in the hamburger */
-    width: 3rem;
-    height: 3rem;
-    border: 0px red solid;;
+    width: 2rem;
+    height: 2rem;
+    border: 0px red solid;
     background-color: transparent;
     cursor: pointer;
     z-index: 20;
-    position: fixed;
+    position: relative;
     top: 0;
     right: 0;
-    margin: 0;
     padding: 0;
 
 }
@@ -95,7 +96,7 @@ margin: 0
     right: 0;
     margin: 0;
     padding: 0;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
 }
 
 .hamburger ul {

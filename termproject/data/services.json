@@ -1,0 +1,52 @@
+{
+
+    "bigBoxSafeCheck": [
+            {"price":"$20"},
+            {"desc":"Pedal, axle, headset, and crankset torqued to specification"},
+            {"desc":"Brake, chain, and derailleur adjustment"},
+            {"desc":"Tire and wheel check"}
+        ],
+
+    "safeCheck":[
+        {"price":"$10"},
+            {"desc":"Everything included in Big Box Safety Check but on quality brand name bike"}
+        ],
+
+    "basicTune":[
+           {"price":"$30"},
+            {"desc":"Complete safety check"},
+            {"desc":"Adjust/torque to specs"},
+            {"desc":"Tire and wheel check"},
+            {"desc":"Shift lube and adjustment"}
+        ],
+
+    "raceTuneDetail":[
+            {"price":"$49"},
+            {"desc":"Chain lube and clean,"},
+            {"desc":"Frame and wheel detailing,"},
+            {"desc":"Minor adjustments"}
+        ],
+
+    "standardTune":[
+            {"price":"$70"},
+            {"desc":"Wipe Down - frame, derailleurs, fork, wheels,"},
+            {"desc":"Chain clean and lube,"},
+            {"desc":"Brake adjustment,"},
+            {"desc":"Shift adjustment,"},
+            {"desc":"Wheel True,"},
+            {"desc":"Hub Adjustment,"},
+            {"desc":"Headset Adjustment"}
+        ],
+
+    "overHaul":[
+            {"price":"$120 - $250+"},
+            {"desc":"Brake Pad Replacement,"},
+            {"desc":"Bearing Replacement,"},
+            {"desc":"Cable/Housing Replacement,"},
+            {"desc":"Suspension Analysis and Service,"},
+            {"desc":"Other Required Repairs,"},
+            {"desc":"Test ridden by certified tech"}
+        ]
+
+
+}

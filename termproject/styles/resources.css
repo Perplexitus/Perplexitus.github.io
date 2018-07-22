@@ -1,4 +1,4 @@
-@import "../modules/nav.css" screen; /*Importing Nav menu from modules folder */
+@import "../modules/header-nav.css" screen; /*Importing Nav menu and header from modules folder */
 @media only screen and (min-width: 15em) {
 
     html {
@@ -13,55 +13,7 @@
         border: 0px red solid; /* Debugging */
         text-align: center;
         font-size: 1.05em;
-    }
-
-
-
-
-    header {
-        max-width: 100%;
-        background: #8d8741;
-        color: #fff;
-        padding-bottom: 3px;
-    }
-
-    .headerContainer {
-        display: flex;
-        justify-content: center;
-        padding: .7em;
-        align-items: center;
-        border-bottom: 10px solid #444;
-    }
-
-    .logoContainer {
-        margin: 0;
-        max-width: 4em;
-        min-width: 10%;
-        cursor: pointer;
-        position: relative;
-        align-self: flex-end;
-
-    }
-
-    .logo {
-        max-width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .title {
-        display: flex;
-        flex-flow: column;
-    }
-
-    .title h1 {
-        padding: 0;
-        margin-bottom: 4%;
-    }
-
-    .title h6 {
-        padding: 0;
-        margin: 0
+        margin: 0 auto;
     }
 
     aside {
@@ -71,26 +23,12 @@
     main {
         display: flex;
         flex-flow: row-reverse;
-    }
-    .main-content {
         max-width: 95%;
         margin: 0 auto;
         background: #fbeec1;
     }
 
-    main div figure {
-        max-width: 100%;
-        margin: 1em auto;
-        background: #8d8741;
-        border-radius: 15px;
-        padding: 2%;
-        color: #fff
-    }
-    main div > figure {
-        border: 2px solid #000;
-    }
-
-    main div section {
+    main section {
         min-height: 10em;
         margin: 1em;
         background: #fff;
@@ -98,26 +36,16 @@
         border: 2px solid #000;
         border-radius: 10px;
     }
-
-    img {
-        max-width: 100%;
+    h2, h3 {
+        font-size: 1.3em;
     }
-
-    .bikers {
-       min-width: 100%;
-
+    h4,h5,h6 {
+        margin: 2%;
     }
-    .newBike h3 a, .bikeRepair h3 a, .tour h3 a {
-        text-decoration: none;
-        color: #659dbd;
+    p {
+        text-align: left;
+        margin: 2%;
     }
-    .newBike h3 a:hover, .bikeRepair h3 a:hover, .tour h3 a:hover {
-        color: #000
-    }
-
-
-
-
 
     footer {
         max-width: 100%;
@@ -137,12 +65,6 @@
     .footer-bar {
         margin: 0;
         padding: 0;
-    }
-
-    .lastTour {
-        background: #659dbd;
-        padding: 1em;
-
     }
 
     .credits {

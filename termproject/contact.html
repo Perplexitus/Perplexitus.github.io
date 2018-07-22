@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <div includefile="modules/meta.html">
-        </div>
-        <title>The Mountain Spoke Adventure Bicycle Tours</title>
-        <meta name="description" content="Details for previous and future bicycle tours.">
 
+    <head>
+        <title>The Mountain Spoke Adventure | Contact Us</title>
+        <meta name="description" content="Have a concern? Use the integrated form to send us a message.">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Tyler Anderson">
@@ -16,18 +14,62 @@
         <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
         <!-- CSS Files -->
         <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="styles/styles-medium.css">
-        <link rel="stylesheet" href="styles/styles-large.css">
+        <link rel="stylesheet" href="styles/contact.css">
+        <link rel="stylesheet" href="styles/contact-medium.css">
+        <link rel="stylesheet" href="styles/contact-large.css">
     </head>
 
     <body>
-
         <header includefile="modules/header-nav.html">
         </header>
-        <body>
-        </body>
 
+        <main class="contactMain">
+            <aside class="sideBar" includefile="modules/sidebar.html"></aside>
+
+            <div class="main-content">
+                <h1>Contact Us</h1>
+                <div class="sectionDiv">
+                    <section class="contact1">
+                        <h2>"Where can I find you?"</h2>
+                        <p>We are located at 3950 Valley Commons Drive Bozeman, Montana.</p>
+                        <p style="text-align: center">Or, right here &#8595;</p>
+                        <div class="iframeDiv">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41302.13505050939!2d-111.06479808500427!3d45.66992118470072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1532289161940" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </section>
+                    <section class="contact2">
+                        <h2>Have a question, comment, or concern?</h2>
+                        <p>Questions arise, issues cause concerns, and many enjoy giving feedback to a website that helps them out.<br>
+                        <br>
+                            Fill out the information and provide a comment. We'll contact you within <strong>48 hours.</strong></p>
+
+                        <form action="thankyou.html" target="_self" method="get">
+                            <fieldset class="personInfo">
+                                <legend>Personal Information</legend>
+                                <label>*First Name:<br>
+                                    <input type="text" name="fname" autocomplete="given-name" class="required" title="First Name" placeholder="'John'" required></label><br>
+
+                                <label>*Last Name:<br>
+                                    <input type="text" name="lname" autocomplete="family-name" class="required" title="Last Name" placeholder="'Doe'" required></label><br>
+
+                                <label>*E-mail:<br>
+                                    <input type="text" name="email" autocomplete="email" class="required" title="E-mail" placeholder="example@example.com" required></label><br>
+
+                                <label>Phone Number<br>
+                                    <input type="number" name="tel" autocomplete="tel" title="Phone Number" placeholder="(###)-###-####"></label><br>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Question, Comment, Concern</legend>
+                                <label><textarea placeholder="Comments?" rows="10"></textarea></label>
+                            </fieldset>
+
+                            <label><input class="submit" type="submit" name="submit" value="Contact Us!"></label>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </main>
 
         <footer class="footer" includefile="modules/footer.html">
         </footer>
@@ -39,5 +81,5 @@
         <script src="scripts/include.js"></script>
 
     </body>
-</html>
 
+</html>
