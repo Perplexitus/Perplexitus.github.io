@@ -89,20 +89,5 @@
     }
 
 
-    .sectionDiv {
-        display: flex;
-    }
 
-    .bikers {
-        margin-bottom: 2%;
-    }
-    .newBike figure a, .bikeRepair figure a {
-        text-decoration: none;
-        color: #fff
-    }
-
-    footer {
-        display: flex;
-        padding: 10px;
-    }
 }

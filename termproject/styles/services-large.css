@@ -12,7 +12,7 @@
         height: 75em;
     }
 
-    tr {
+    tbody tr {
         display: flex;
         justify-content: center;
         align-items: stretch;
@@ -27,6 +27,9 @@
     .titles th {
         flex-grow: 1;
         padding: 2%;
+    }
+    thead tr th {
+        font-size: 48px;
     }
     footer {
         align-items: center;
