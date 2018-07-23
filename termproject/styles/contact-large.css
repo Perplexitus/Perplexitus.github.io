@@ -4,12 +4,13 @@
         font-size: 1.02em;
     }
 
-    .navbar ul li a {
-        width: 8rem;
+    .main-content {
+        margin: 0 auto;
+        min-width: 85%;
     }
 
-    .sideBar {
-        height: 75em;
+    .navbar ul li a {
+        width: 8rem;
     }
 
     footer {
