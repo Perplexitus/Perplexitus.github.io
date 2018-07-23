@@ -106,6 +106,24 @@
         justify-content: center;
     }
 
+    .video {
+        max-width: 95%;
+        background-color: #fbeec1;
+        margin: 0 auto;
+        padding: 0;
+        min-height: 20rem;
+    }
+    .video figure {
+        background-color: #fff;
+        margin: 2% auto;
+        padding: 2%;
+        max-width: 100%;
+    }
+    .video video {
+        max-width: 100%;
+        border: 2px solid #000;
+    }
+
     .credits {
         display: none;
     }
